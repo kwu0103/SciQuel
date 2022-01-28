@@ -33,7 +33,7 @@
 
 .background {
     overflow: hidden;
-    background-image: url('cell.jpg');
+    background-image: url('/cell.jpg');
     background-repeat: no-repeat;
     color: white;
     background-size: cover;
