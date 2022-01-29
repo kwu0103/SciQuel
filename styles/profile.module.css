@@ -17,7 +17,8 @@
     max-width: 150px;
 }
 
-.spanProfile {
+.spanProfile,
+.spanCard {
     display: inline-block;
     color: white;
     margin-right: 10px;
@@ -50,4 +51,44 @@
     margin-top: 1em;
     padding: auto;
     max-width: 250px;
+}
+
+.cardBackground {
+    margin: 3em;
+}
+
+.authorName,
+.dateOnCard  {
+    float: right;
+    margin-top: 0.25em;
+}
+
+.spanCard {
+    font-size: small;
+}
+
+.authorBox {
+    align-items: center;
+    margin: 5em;
+    max-width: 40rem;
+    min-width: 30rem;
+    border-radius: 3%;
+}
+.authorImg {
+    display: block;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.authorText {
+    margin-top: 2em;
+    font-size: large;
+}
+
+.authorHeader {
+    color: teal;
 }
