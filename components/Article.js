@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Date from "./date";
+import Date from "./Date";
 import utilStyles from "../styles/utils.module.css";
 
 function Article({

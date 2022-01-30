@@ -1,8 +1,10 @@
-import Layout from "../components/layout";
-import MainCard from "../components/MainCard/MainCard";
-import Card from "../components/cards";
-import styles from "../components/layout.module.css";
 import Link from "next/link";
+
+import Layout from "../components/Layout/Layout";
+import MainCard from "../components/MainCard/MainCard";
+import Card from "../components/Cards/Cards";
+
+import styles from "../components/Layout/Layout.module.css";
 
 export default function Home() {
     return (

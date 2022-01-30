@@ -1,5 +1,4 @@
-import Head from "next/head";
-import {Card, Button} from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import styles from "./cards.module.css";
 
 function Cards({imgSrc}){
@@ -15,7 +14,7 @@ function Cards({imgSrc}){
                     <Card.Title>Light. Camera. Action!</Card.Title>
                     <Card.Text>
                     Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    the card&apos;s content.
                     </Card.Text>
                     <Card.Text>
                         <small>By Edward Chen</small>
