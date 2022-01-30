@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p {
+  font-family: 'Source Serif Pro';
+}
+
+h4 {
+  font-family: 'Quicksand';
+  font-weight: 900;
+  color: #4A8257;
+}
+
+h5 {
+  font-family: 'Quicksand';
+}

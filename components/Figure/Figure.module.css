@@ -1,0 +1,36 @@
+.figure {
+    display: flex;
+    align-items: center;
+
+    width: 150%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    color:#6D6D6D;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+}
+
+.left {
+    flex-direction: row-reverse;
+    gap: 80px;
+}
+
+.right {
+    flex-direction: row;
+    gap: 80px;
+}
+
+.below {
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.above {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+}
