@@ -1,0 +1,44 @@
+.MainCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.HeadlineBox{
+    width: 500px;
+    height: 240px;
+    border-radius: 5px;
+
+    background-image: linear-gradient(#1A6F8C, #63A59D);
+    color: white;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 75px;
+
+    margin-top: 27px;
+    margin-right: -100px;
+
+    position: relative;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.SubheadlineText{
+    font-size: 20px;
+}
+
+.AuthorText{
+    color:gray;
+    font-size:large;
+    margin-top: 10px;
+}
+
+/* .Image{
+    transform: translateX(-100px);
+} */
+
+.ImageContainer{
+    flex-shrink: 0;
+}
