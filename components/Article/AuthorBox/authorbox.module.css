@@ -1,0 +1,55 @@
+.authorBox {
+    margin: 0;
+    max-width: 40rem;
+    border-radius: 3%;
+    max-height: 30rem;
+}
+
+.authorImg {
+    display: block;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.authorText {
+    margin-top: 2em;
+    font-size: large;
+}
+
+.authorHeader {
+    color: teal;
+}
+
+@media only screen and (max-width: 800px) {
+    .authorImg {
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto; 
+        justify-content: center;
+    }
+
+    .authorText {
+        margin-top: 2.5rem;
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .authorImg {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8em;
+        width: 8em;
+        justify-content: center;
+    }
+
+    .authorText {
+        margin-top: 0.025rem;
+        font-size: medium;
+    }
+  }

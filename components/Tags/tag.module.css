@@ -1,0 +1,13 @@
+.tag {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: inherit;
+    border-radius: 10px;
+}
