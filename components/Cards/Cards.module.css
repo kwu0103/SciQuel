@@ -1,60 +1,42 @@
-.spanProfile {
+.span {
     display: inline-block;
+    font-size: 10px;
     color: white;
     margin-right: 10px;
-    padding: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     align-items: center;
     justify-content: center;
     width: fit-content;
     height: inherit;
     background-color: #D28161;
-    border-radius: 5px;
-}
-
-.imageProfile {
-    display: block;
-    align-items: center;
-    border-radius: 50%;
-    margin: 1em auto;
-    height: 15em;
-    width: 15em;
-}
-
-.logoProfile {
-    height: 1.25em;
-    width: 1.25em;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.param {
-    margin-top: 1em;
-    padding: auto;
-    max-width: 250px;
-}
-
-.spanProfile,
-.spanCard {
-    display: inline-block;
-    color: black;
     border-radius: 10px;
-    margin-right: 10px;
-    margin-top: 1em;
-    padding: auto;
-    max-width: 250px;
+}
+
+.cardBackground {
+    margin: 3em;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .authorName,
 .dateOnCard  {
     float: right;
     margin-top: 0.25em;
+    color: gray;
 }
 
-.spanCard {
-    font-size: small;
+.cardPic {
+    margin: 5px;
+    width: 97%;
+    height: 8em;
 }
 
-.cardPic{
-    size: 50%;
-    height: inherit;
+.center {
+    margin-top: 2em;
+}
+
+.small {
+    color: gray;
 }

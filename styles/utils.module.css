@@ -24,8 +24,8 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background-color: #D28161;
-    color: white;
+    height: inherit;
+    background-color: #f58559;
     border-radius: 15px;
 }
 
@@ -51,7 +51,7 @@
     background-repeat: no-repeat;
     color: white;
     background-size: cover;
-    padding: 200px 0 0;  
+    padding: 200px 0 0;
 }
 
 .grow{

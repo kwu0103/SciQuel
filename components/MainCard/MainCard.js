@@ -8,7 +8,7 @@ function MainCard({
     tag,
     headline,
     subheadline,
-    author,
+    contributor,
     date,
     imgSrc,
     href
@@ -22,7 +22,7 @@ function MainCard({
                         <h3><b>{headline}</b></h3>
                         <p className={styles.SubheadlineText}>{subheadline}</p>
                     </div>
-                    <p className={styles.AuthorText}>{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    <p className={styles.ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div>
             </Link>
             <div className={styles.ImageContainer}>
