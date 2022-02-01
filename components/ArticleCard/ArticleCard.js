@@ -9,7 +9,7 @@ import utilStyles from "../../styles/utils.module.css";
 function ArticleCard({
     headline,
     subheadline,
-    author,
+    contributor,
     kind,
     tag,
     imgSrc,
@@ -30,7 +30,7 @@ function ArticleCard({
                                 {subheadline}
                             </Card.Text>
                             <Card.Text>
-                                <small className={cardStyles.small+' '+cardStyles.bodyFont}>By {author}</small>
+                                <small className={cardStyles.small+' '+cardStyles.bodyFont}>By {contributor}</small>
                                 <small className= {cardStyles.dateOnCard+' '+cardStyles.bodyFont}>{date}</small>
                             </Card.Text>
                         </div>

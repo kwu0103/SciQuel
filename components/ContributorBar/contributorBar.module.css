@@ -9,7 +9,7 @@
     padding-top: 15px;
 }
 
-.authorName {
+.contributorName {
     font-size: 2em;
 }
 
@@ -42,10 +42,10 @@
         height: 8em;
         width: 8em;
     }
-    .authorName {
+    .contributorName {
         font-size: 1.25em;
     }
     .background {   
         width: 15em;
     }
-  }
+}

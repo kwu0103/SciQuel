@@ -10,7 +10,7 @@ export default function index() {
   const mainCard = <MainCard 
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
-    author="By Edward Chen"
+    contributor="By Edward Chen"
     tag={BiologyTag}
     date="05/27/21"
     imgSrc="/bobtail.png"
@@ -20,7 +20,7 @@ export default function index() {
   const articleCard = <ArticleCard 
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its..."
-    author="Edward Chen"
+    contributor="Edward Chen"
     kind="ARTICLE"
     tag={BiologyTag}
     date="05/27/21"

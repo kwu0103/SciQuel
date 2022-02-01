@@ -9,19 +9,7 @@ export default function Header() {
       </Link>
 
       <Link href="/">
-        <a>Latest</a>
-      </Link>
-
-      <Link href="/">
         <a>Read</a>
-      </Link>
-
-      <Link href="/">
-        <a>Listen</a>
-      </Link>
-
-      <Link href="/">
-        <a>Watch</a>
       </Link>
 
       <Link href="/">
@@ -32,7 +20,9 @@ export default function Header() {
         <a>About</a>
       </Link>
 
-      <input className={styles.input} placeholder="&#x1F50E;Search Sciquel" />
+      <form className={styles.search}>
+        <input className={styles.input} placeholder="Search Sciquel" />
+      </form>
       
       <Link href="/">
         <a>Login</a>

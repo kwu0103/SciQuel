@@ -9,7 +9,7 @@ function MainCard({
     tag,
     headline,
     subheadline,
-    author,
+    contributor,
     date,
     imgSrc,
     href
@@ -17,14 +17,14 @@ function MainCard({
     
     // ensure that the author text below the headline box scales with the headline box
     const HeadlineBox = useRef();
-    const AuthorText = useRef();
+    const ContributorText = useRef();
 
     useEffect(()=>{
         HeadlineBox.current.onmouseover = () => {
-            AuthorText.current.classList.add(styles.PseudoGrowHover);
+            ContributorText.current.classList.add(styles.PseudoGrowHover);
         };
         HeadlineBox.current.onmouseout = () => {
-            AuthorText.current.classList.remove(styles.PseudoGrowHover);
+            ContributorText.current.classList.remove(styles.PseudoGrowHover);
         };
     }, []);
 
@@ -37,7 +37,7 @@ function MainCard({
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
                     </div>
-                    <p className={styles.AuthorText} ref={AuthorText}>{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div>
             </Link>
             <div className={styles.ImageContainer}>

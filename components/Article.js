@@ -9,7 +9,7 @@ function Article({
     title,
     subtitle,
     tag,
-    author,
+    contributor,
     date,
     length,
     children
@@ -36,8 +36,8 @@ function Article({
                     <b>Article</b> | <b>Essay</b> | {tag}
                     <br /> <br />
                     <h5>
-                        {author}
-                        </h5>
+                        {contributor}
+                    </h5>
                     <h5>
                         <Date dateString={date}/> | {length}
                     </h5>
