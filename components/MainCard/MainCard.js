@@ -13,13 +13,25 @@ function MainCard({
     imgSrc,
     href
 }){
-    const {color, tagName} = tag;
+    
+    // ensure that the author text below the headline box scales with the headline box
+    if(process.browser){
+        const HeadlineBox = document.getElementById('MainCardHeadlineBox');
+        const AuthorText = document.getElementById('MainCardAuthorText');
+
+        HeadlineBox.onmouseover = () => {
+            AuthorText.classList.add(styles.PseudoGrowHover);
+        };
+        HeadlineBox.onmouseout = () => {
+            AuthorText.classList.remove(styles.PseudoGrowHover);
+        };
+    }
 
     return(
         <div className={styles.MainCard}>
             <Link href={href} passHref={true}>
                 <div>
-                    <div className={styles.HeadlineBox+' '+utilStyles.grow}>
+                    <div className={styles.HeadlineBox+' '+utilStyles.grow} id="MainCardHeadlineBox">
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>

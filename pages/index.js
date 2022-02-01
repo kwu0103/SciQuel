@@ -13,7 +13,7 @@ export default function index() {
     author="By Edward Chen"
     tag={BiologyTag}
     date="05/27/21"
-    imgSrc="/hawaiian_bobtail_squid.png"
+    imgSrc="/bobtail.png"
     href="/posts/post"
   />;
 
@@ -24,7 +24,7 @@ export default function index() {
     kind="ARTICLE"
     tag={BiologyTag}
     date="05/27/21"
-    imgSrc="/cell.jpg"
+    imgSrc="/bobtail.png"
     href="/posts/post"
   />;
 
