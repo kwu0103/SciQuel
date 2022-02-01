@@ -14,10 +14,8 @@ function Post(){
 
     return (
         <Article
-            title={<>
-                <i>Vibrio fischeri</i> and the Hawaiian bobtail squid: A beautiful example of ecology
-            </>}
-            subtitle={<>A tale of two phyla. The Special Relationship of biology.</>}
+            title="Lights. Camera. Action!"
+            subtitle="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
             tag={BiologyTag}
             author={<>by Edward Chen<br></br>figures by Jovana Andrejevic</>}
             date="2021-07-05"
