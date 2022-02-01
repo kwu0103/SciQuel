@@ -1,5 +1,6 @@
 import Image from "next/Image";
 import Link from "next/Link";
+import { useEffect, useRef } from "react";
 
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
@@ -15,28 +16,28 @@ function MainCard({
 }){
     
     // ensure that the author text below the headline box scales with the headline box
-    if(process.browser){
-        const HeadlineBox = document.getElementById('MainCardHeadlineBox');
-        const AuthorText = document.getElementById('MainCardAuthorText');
+    const HeadlineBox = useRef();
+    const AuthorText = useRef();
 
-        HeadlineBox.onmouseover = () => {
-            AuthorText.classList.add(styles.PseudoGrowHover);
+    useEffect(()=>{
+        HeadlineBox.current.onmouseover = () => {
+            AuthorText.current.classList.add(styles.PseudoGrowHover);
         };
-        HeadlineBox.onmouseout = () => {
-            AuthorText.classList.remove(styles.PseudoGrowHover);
+        HeadlineBox.current.onmouseout = () => {
+            AuthorText.current.classList.remove(styles.PseudoGrowHover);
         };
-    }
+    }, []);
 
     return(
         <div className={styles.MainCard}>
             <Link href={href} passHref={true}>
                 <div>
-                    <div className={styles.HeadlineBox+' '+utilStyles.grow} id="MainCardHeadlineBox">
+                    <div className={styles.HeadlineBox+' '+utilStyles.grow} ref={HeadlineBox}>
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
                     </div>
-                    <p className={styles.AuthorText} id="MainCardAuthorText">{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    <p className={styles.AuthorText} ref={AuthorText}>{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div>
             </Link>
             <div className={styles.ImageContainer}>
