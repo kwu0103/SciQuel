@@ -24,7 +24,7 @@ function MainCard({
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
                     </div>
-                    <p className={styles.AuthorText}>{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    <p className={styles.AuthorText} id="MainCardAuthorText">{author}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div>
             </Link>
             <div className={styles.ImageContainer}>

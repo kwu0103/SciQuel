@@ -40,8 +40,13 @@
 
 .AuthorText{
     color:gray;
-    font-size:large;
+    font-size: large;
     margin-top: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.PseudoGrowHover{
+    transform: scale(1.1) translateY(10px);
 }
 
 /* .Image{
