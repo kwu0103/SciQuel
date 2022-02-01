@@ -7,7 +7,8 @@ import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
 export default function index() {
 
-  const mainCard = <MainCard
+  //TODO: translation centers the main card - find out why there's extra padding to the right
+  const mainCard = <MainCard style={{transform:"translateX(10%)"}}
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
     author="By Edward Chen"
