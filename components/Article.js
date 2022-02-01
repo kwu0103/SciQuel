@@ -1,5 +1,8 @@
-import Head from "next/head";
+import Head from "next/Head";
 import Date from "./Date";
+
+import Tag from "./Tag/Tag";
+
 import utilStyles from "../styles/utils.module.css";
 
 function Article({
@@ -30,7 +33,7 @@ function Article({
                     </div>
                 </div>
                 <div className={utilStyles.centerarticle}>
-                    <b>Article</b> | <b>Essay</b> | <span className={utilStyles.span}>{tag}</span>
+                    <b>Article</b> | <b>Essay</b> | {tag}
                     <br /> <br />
                     <h5>
                         {author}

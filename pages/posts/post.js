@@ -1,15 +1,24 @@
 import Article from "../../components/Article";
 import Figure from "../../components/Figure/Figure"
 import Acknowledgement from "../../components/Acknowledgement/Acknowledgement";
+import BiologyTag from "../../components/Tag/BiologyTag";
 
 function Post(){
+
+    const term = "Esential Amino Acid";
+    const definition = "How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens. How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens";
+    const inContext = "How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens";
+    const authorName = 'Edward Chen';
+    const desc = 'Edward Chen is a second-year Immunology MMSc student at Harvard Medical School. He wonders whether there’s a biologically useful concept of “Hycean organisms”; humans, after all, are up to 60% water.';
+    const image = "/SciQuel_1.png";
+
     return (
         <Article
             title={<>
                 <i>Vibrio fischeri</i> and the Hawaiian bobtail squid: A beautiful example of ecology
             </>}
             subtitle={<>A tale of two phyla. The Special Relationship of biology.</>}
-            tag="biology"
+            tag={BiologyTag}
             author={<>by Edward Chen<br></br>figures by Jovana Andrejevic</>}
             date="2021-07-05"
             length="8 min read"

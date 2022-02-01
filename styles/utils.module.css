@@ -24,8 +24,8 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background-color: #D28161;
-    color: white;
+    height: inherit;
+    background-color: #f58559;
     border-radius: 15px;
 }
 

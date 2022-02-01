@@ -25,7 +25,16 @@
     cursor: pointer;
 }
 
+.HeadlineText{
+    margin-top: 2px;
+
+    font-family: 'Alegreya Sans SC';
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .SubheadlineText{
+    font-family: 'Quicksand';
     font-size: 20px;
 }
 
