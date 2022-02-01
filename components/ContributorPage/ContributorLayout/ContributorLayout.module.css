@@ -8,12 +8,11 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    /* height: calc(100vh - 200px); */
-    margin-bottom: 100px;
 }
 
 .left {
     height: 100%;
+    position: absolute;
 }
 
 .right {
@@ -27,7 +26,6 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    /* margin-top: 100px; */
 }
 
 .cards > a {

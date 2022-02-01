@@ -1,24 +1,7 @@
-/* .background {
-    height: 100%;
-    width: 25em;
-    position:absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #dae9e2;
-    overflow-x: hidden;
-    padding: 32px;
-    margin-bottom: -5000px;
-} */
 .background{
     background-color: #dae9e2;
     width: 25em;
     height: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-bottom: 16%;
 }
 
 .contributorName {
@@ -62,7 +45,7 @@
     margin-bottom: 0.5em;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .image {
         height: 8em;
         width: 8em;
@@ -77,4 +60,4 @@
     .center {
         padding: 0;
     }
-} */
+}

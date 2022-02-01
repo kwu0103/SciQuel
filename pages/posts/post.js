@@ -112,17 +112,7 @@ function Post(){
                         Jovana Andrejevic is a sixth-year Applied Physics Ph.D. student in the School of Engineering and Applied Sciences at Harvard University.
                     </p>
                 </Acknowledgement>
-            <ContributorBox 
-                image = {image} 
-                contributorName = {contributorName} 
-                desc = {desc} 
-            />
-            </Article>                
-            <DefBox 
-                term = {term} 
-                definition={definition} 
-                inContext={inContext}
-            />
+            </Article>
         </>
         
     );
