@@ -2,6 +2,10 @@ import Article from "../../components/Article";
 import Figure from "../../components/Figure/Figure"
 import Acknowledgement from "../../components/Acknowledgement/Acknowledgement";
 import BiologyTag from "../../components/Tag/BiologyTag";
+import AuthorBox from "../../components/AuthorBox/authorBox";
+
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function Post(){
 
@@ -13,6 +17,8 @@ function Post(){
     const image = "/SciQuel_1.png";
 
     return (
+    <>
+        <Header />
         <Article
             title="Lights. Camera. Action!"
             subtitle="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
@@ -93,7 +99,20 @@ function Post(){
             </p>
             </Acknowledgement>
         </Article>
-    );
+        <div style={{marginLeft:"50%",transform:"translateX(-50%)"}}>
+            <AuthorBox 
+                authorName="Edward Chen"
+                desc="Edward Chen is a first-year Immunology MMSc student at Harvard Medical School. Though he used to think of himself as a seal person, writing this article has leaned him towards squid people."
+                image="/SciQuel_1.png"
+                />
+            <AuthorBox 
+                authorName="Jovana Andrejevic"
+                desc="Jovana Andrejevic is a fifth-year Applied Physics Ph.D. student in the School of Engineering and Applied Sciences at Harvard University. She’s open-minded and is neither a squid nor a seal person."
+                image="/SciQuel_1.png"
+                />
+        </div>
+        <Footer />
+    </>);
 }
 
 export default Post;
