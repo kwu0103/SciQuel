@@ -7,8 +7,7 @@ import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
 export default function index() {
 
-  //TODO: translation centers the main card - find out why there's extra padding to the right
-  const mainCard = <MainCard style={{transform:"translateX(10%)"}}
+  const mainCard = <MainCard 
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
     author="By Edward Chen"
@@ -32,7 +31,9 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
-      {mainCard}
+      <div className={styles.maincard}>
+        {mainCard}
+      </div>
       <div className={styles.cards}>
           {articleCard}
           {articleCard}

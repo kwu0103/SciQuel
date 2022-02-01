@@ -11,12 +11,16 @@
     margin-bottom: 100px;
 }
 
+.maincard {
+    max-width: 1000px;
+    transform: translateX(10%);
+}
+
 .cards {
     min-width: auto;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin-top: 100px;
 }
 
 .cards > a {
