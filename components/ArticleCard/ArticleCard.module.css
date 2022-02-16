@@ -1,63 +1,63 @@
 .span {
-    display: inline-block;
-    font-size: 10px;
-    color: white;
-    margin-right: 10px;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    height: inherit;
-    background-color: #D28161;
-    border-radius: 10px;
+	display: inline-block;
+	font-size: 10px;
+	color: white;
+	margin-right: 10px;
+	padding: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	height: inherit;
+	background-color: #d28161;
+	border-radius: 10px;
 }
 
 .cardBackground {
-    margin: 1em;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
+	margin: 1em;
+	padding: 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	flex-wrap: wrap;
 }
 
 .kind {
-    float: right;
-    margin-top: 0.25em;
-    color: gray;
-    font-weight: bold;
-    font-size: small;
+	float: right;
+	margin-top: 0.25em;
+	color: gray;
+	font-weight: bold;
+	font-size: small;
 }
-.dateOnCard  {
-    float: right;
-    margin-top: 0.25em;
-    color: gray;
-}
-
-.cardPic {
-    margin: 5px;
-    width: 97%;
-    height: 8em;
+.dateOnCard {
+	float: right;
+	margin-top: 0.25em;
+	color: gray;
 }
 
+.card-img-top {
+	width: 100%;
+	height: 15vw;
+	object-fit: cover;
+}
 .center {
-    margin-top: 2em;
+	margin-top: 2em;
 }
 
 .small {
-    color: gray;
+	color: gray;
 }
 
 .headline {
-    font-family: 'Alegreya Sans SC';
-    font-size: 25px;
-    font-weight: bold;
+	font-family: 'Alegreya Sans SC';
+	font-size: 25px;
+	font-weight: bold;
 }
 
 .bodyfont {
-    font-family: 'Source Serif Pro';
+	font-family: 'Source Serif Pro';
 }
 
 .body {
-    font-size: 18px;
+	font-size: 18px;
 }

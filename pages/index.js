@@ -5,19 +5,23 @@ import BiologyTag from "../components/Tag/BiologyTag";
 
 import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
+import Image from "next/image";
+
+import profilePic from '../public/bobtail.png'
+
 export default function index() {
 
-  const mainCard = <MainCard 
+  const mainCard = <MainCard
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
     contributor="By Edward Chen"
     tag={BiologyTag}
     date="05/27/21"
-    imgSrc="/bobtail.png"
+    imgSrc={profilePic}
     href="/posts/post"
   />;
 
-  const articleCard = <ArticleCard 
+  const articleCard = <ArticleCard
     headline="Lights. Camera. Action!"
     subheadline="How the Hawaiian bobtail squid brings a creative vision to its..."
     contributor="Edward Chen"
@@ -25,6 +29,7 @@ export default function index() {
     tag={BiologyTag}
     date="05/27/21"
     imgSrc="/bobtail.png"
+    layout="responsive"
     href="/posts/post"
   />;
 
@@ -35,9 +40,7 @@ export default function index() {
         {mainCard}
       </div>
       <div className={styles.cards}>
-          {articleCard}
-          {articleCard}
-          {articleCard}
+        {articleCard}
       </div>
     </HomepageLayout>
   );

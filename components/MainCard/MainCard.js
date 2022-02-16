@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
+
+
 function MainCard({
     tag,
     headline,
@@ -13,13 +15,13 @@ function MainCard({
     date,
     imgSrc,
     href
-}){
-    
+}) {
+
     // ensure that the author text below the headline box scales with the headline box
     const HeadlineBox = useRef();
     const ContributorText = useRef();
 
-    useEffect(()=>{
+    useEffect(() => {
         HeadlineBox.current.onmouseover = () => {
             ContributorText.current.classList.add(styles.PseudoGrowHover);
         };
@@ -28,11 +30,11 @@ function MainCard({
         };
     }, []);
 
-    return(
+    return (
         <div className={styles.MainCard}>
             <Link href={href} passHref={true}>
                 <div>
-                    <div className={styles.HeadlineBox+' '+utilStyles.grow} ref={HeadlineBox}>
+                    <div className={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
