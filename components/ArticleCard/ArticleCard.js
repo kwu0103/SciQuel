@@ -21,86 +21,26 @@ function ArticleCard({
 
     return (
         <Link href={href} passHref>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100" style={{
-                        backgroundColor: '#f8f8ff',
-                        maxWidth: '400px'
-                    }}>
-                        < div className={cardStyles.cardBackground + ' ' + utilStyles.grow} >
-                            < Card.Body >
-                                {tag}
-                                < small className={cardStyles.kind + ' ' + cardStyles.bodyFont} > {kind}</small>
-                                <div className={cardStyles.center}>
-                                    <Card.Title className={cardStyles.headline}>{headline}</Card.Title>
-                                    <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
-                                        {subheadline}
-                                    </Card.Text>
-                                    <Card.Text>
-                                        <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
-                                        <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
-                                    </Card.Text>
-                                </div>
-                            </Card.Body>
-                            <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
+            <div className={cardStyles.cardBackground + ' ' + utilStyles.grow}>
+                <Card style={{ maxWidth: '400px', backgroundColor: '#f8f8ff' }}>
+                    <Card.Body>
+                        {tag}
+                        <small className={cardStyles.kind + ' ' + cardStyles.bodyFont}>{kind}</small>
+                        <div className={cardStyles.center}>
+                            <Card.Title className={cardStyles.headline}>{headline}</Card.Title>
+                            <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
+                                {subheadline}
+                            </Card.Text>
+                            <Card.Text>
+                                <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
+                                <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
+                            </Card.Text>
                         </div>
-                    </div >
-                </div >
-                <div class="col">
-                    <div class="card h-100" style={{
-                        backgroundColor: '#f8f8ff',
-                        maxWidth: '400px'
-                    }}>
-                        < div className={cardStyles.cardBackground + ' ' + utilStyles.grow} >
-
-
-                            < Card.Body >
-                                {tag}
-                                < small className={cardStyles.kind + ' ' + cardStyles.bodyFont} > {kind}</small>
-                                <div className={cardStyles.center}>
-                                    <Card.Title className={cardStyles.headline}>{headline}</Card.Title>
-                                    <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
-                                        {subheadline}
-                                    </Card.Text>
-                                    <Card.Text>
-                                        <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
-                                        <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
-                                    </Card.Text>
-                                </div>
-                            </Card.Body>
-                            <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
-                        </div>
-                    </div >
-                </div >
-                <div class="col">
-                    <div class="card h-100" style={{
-                        backgroundColor: '#f8f8ff',
-                        maxWidth: '400px'
-                    }}>
-                        < div className={cardStyles.cardBackground + ' ' + utilStyles.grow} >
-
-
-                            < Card.Body >
-                                {tag}
-                                < small className={cardStyles.kind + ' ' + cardStyles.bodyFont} > {kind}</small>
-                                <div className={cardStyles.center}>
-                                    <Card.Title className={cardStyles.headline}>{headline}</Card.Title>
-                                    <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
-                                        {subheadline}
-                                    </Card.Text>
-                                    <Card.Text>
-                                        <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
-                                        <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
-                                    </Card.Text>
-                                </div>
-                            </Card.Body>
-                            <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
-                        </div>
-                    </div >
-                </div >
-            </div >
-
-        </Link >
+                    </Card.Body>
+                    <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
+                </Card>
+            </div>
+        </Link>
     )
 }
 

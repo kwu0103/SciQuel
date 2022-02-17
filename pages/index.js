@@ -36,11 +36,21 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
+
       <div className={styles.maincard}>
         {mainCard}
       </div>
-      <div className={styles.cards}>
-        {articleCard}
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          {articleCard}
+        </div>
+        <div class="col">
+          {articleCard}
+        </div>
+        <div class="col">
+          {articleCard}
+        </div>
+
       </div>
     </HomepageLayout>
   );
