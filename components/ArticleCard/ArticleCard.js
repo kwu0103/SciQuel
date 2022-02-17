@@ -22,7 +22,7 @@ function ArticleCard({
     return (
         <Link href={href} passHref>
             <div className={cardStyles.cardBackground + ' ' + utilStyles.grow}>
-                <Card style={{ maxWidth: '400px', backgroundColor: '#f8f8ff' }}>
+                <Card style={{ maxWidth: '350px', backgroundColor: '#f8f8ff' }}>
                     <Card.Body>
                         {tag}
                         <small className={cardStyles.kind + ' ' + cardStyles.bodyFont}>{kind}</small>
