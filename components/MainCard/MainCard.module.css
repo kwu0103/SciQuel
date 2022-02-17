@@ -54,7 +54,12 @@
 } */
 
 .ImageContainer {
-	flex-shrink: 0;
-	min-width: 700px;
+	width: 75%;
+	height: 75%;
+
+	object-fit: cover;
+	flex-shrink: auto;
+	max-width: 750px;
+	min-width: 500px;
 	flex-wrap: wrap;
 }

@@ -36,22 +36,30 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
+      <div class="container">
 
-      <div className={styles.maincard}>
-        {mainCard}
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-3">
-        <div class="col">
-          {articleCard}
-        </div>
-        <div class="col">
-          {articleCard}
-        </div>
-        <div class="col">
-          {articleCard}
-        </div>
+        <div class="row justify-content-md-center">
+          <div class="row">
+            <div className={styles.maincard}>
+              {mainCard}
+            </div>
+          </div>
 
+          <div class="row row-cols-md-3 g-3">
+            <div class="col">
+              {articleCard}
+            </div>
+            <div class="col">
+              {articleCard}
+            </div>
+            <div class="col">
+              {articleCard}
+            </div>
+
+          </div>
+        </div>
       </div>
+
     </HomepageLayout>
   );
 }
