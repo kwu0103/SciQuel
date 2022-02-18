@@ -37,15 +37,17 @@ export default function index() {
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
       <div class="container">
-
         <div class="row justify-content-md-center">
-          <div class="row">
-            <div className={styles.maincard}>
-              {mainCard}
+          <div class="row ">
+            <div class="col">
+              <div className={styles.maincard}>
+                {mainCard}
+              </div>
+
             </div>
           </div>
 
-          <div class="row row-cols-md-3 g-3">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
             <div class="col">
               {articleCard}
             </div>
@@ -57,9 +59,13 @@ export default function index() {
             </div>
 
           </div>
+
+
+
         </div>
       </div>
 
-    </HomepageLayout>
+
+    </HomepageLayout >
   );
 }

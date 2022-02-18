@@ -5,10 +5,10 @@
 }
 
 .HeadlineBox {
-	width: 500px;
-	height: 240px;
+	/* width: fit-content;
+	height: inherit; */
 	border-radius: 5px;
-	min-width: 100%;
+	min-width: 70%;
 	background-image: linear-gradient(#1a6f8c, #63a59d);
 	color: white;
 
@@ -55,8 +55,7 @@
 
 .ImageContainer {
 	width: 75%;
-	height: 75%;
-
+	height: 90%;
 	object-fit: cover;
 	flex-shrink: auto;
 	max-width: 750px;

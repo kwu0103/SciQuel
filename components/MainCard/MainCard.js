@@ -2,6 +2,7 @@ import Image from "next/Image";
 import Link from "next/Link";
 import { useEffect, useRef } from "react";
 
+import { Card } from 'react-bootstrap';
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
@@ -31,19 +32,21 @@ function MainCard({
     }, []);
 
     return (
-        <div className={styles.MainCard}>
-            <Link href={href} passHref={true}>
-                <div>
-                    <div className={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
-                        {tag}
-                        <div className={styles.HeadlineText}>{headline}</div>
-                        <div className={styles.SubheadlineText}>{subheadline}</div>
+        <div class="mh-100" >
+            <div className={styles.MainCard}>
+                <Link href={href} passHref={true}>
+                    <div>
+                        <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
+                            {tag}
+                            <div className={styles.HeadlineText}>{headline}</div>
+                            <div className={styles.SubheadlineText}>{subheadline}</div>
+                        </div>
+                        <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                     </div>
-                    <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                </Link>
+                <div className={styles.ImageContainer}>
+                    <Image className={styles.Image} src={imgSrc} alt={imgSrc} objectPosition="-20%" />
                 </div>
-            </Link>
-            <div className={styles.ImageContainer}>
-                <Image className={styles.Image} src={imgSrc} alt={imgSrc} objectFit="cover" objectPosition="-20%" />
             </div>
         </div>
     );
