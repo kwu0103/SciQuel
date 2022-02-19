@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 import Image from "next/image"
 
 export default function Footer() {
@@ -12,7 +12,7 @@ export default function Footer() {
                     <input type="submit" className={styles.button} value="Subscribe"/>
                 </div>
                 <div>
-                    <h6 className={styles.text}>SciQuel</h6>
+                    <h6 className={styles.logo}>SciQuel</h6>
                     <div className={styles.social}>
                         <Link href="/">
                             <a><div className={styles.icon}><Image src="/instagram.svg" width={20} height={20} alt="instagram"/></div></a>

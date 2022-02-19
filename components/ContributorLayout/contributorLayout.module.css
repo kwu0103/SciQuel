@@ -16,9 +16,8 @@
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
-    margin-right: -1000px;
+    margin-left: 40px;
+    padding-top: 30px;
 }
 
 .cards {
@@ -36,4 +35,14 @@
 
 .cards > a:hover{
     transform: scale(1.1);
+}
+
+.pageNumbers{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.pagination{
+    position: relative;
 }
