@@ -7,16 +7,21 @@
 .HeadlineBox {
 	/* width: fit-content;
 	height: inherit; */
+	max-width: 507px;
+	/* max-height: 520px; */
+
+	min-width: 450px;
+	width: fit-content;
 	border-radius: 5px;
-	min-width: 70%;
+
 	background-image: linear-gradient(#1a6f8c, #63a59d);
 	color: white;
 
-	padding-left: 20px;
-	padding-top: 20px;
-	padding-right: 75px;
+	padding-left: 5%;
+	padding-right: 11%;
+	padding-top: 10%;
+	padding-bottom: 5%;
 
-	margin-top: 27px;
 	margin-right: -100px;
 
 	position: relative;
@@ -27,7 +32,6 @@
 
 .HeadlineText {
 	margin-top: 2px;
-
 	font-family: 'Alegreya Sans SC';
 	font-weight: bold;
 	font-size: 30px;
@@ -48,17 +52,28 @@
 .PseudoGrowHover {
 	transform: scale(1.1) translateY(10px);
 }
-/* 
-.Image {
-	transform: translateX(-100px);
+
+/* .Image {
+	position: absolute;
+	width: 626px;
+	height: 368px;
+	left: 642px;
+	top: 189px;
 } */
 
+/* padding-bottom: 30px; */
+/* max-height: 527px; */
+/* height: inherit; */
+/* max-height: 427px; */
+
 .ImageContainer {
-	width: 75%;
-	height: 90%;
+	position: relative;
 	object-fit: cover;
 	flex-shrink: auto;
-	max-width: 750px;
-	min-width: 500px;
+
+	min-width: 626px;
+	min-height: 168px;
+
+	max-width: 826px;
 	flex-wrap: wrap;
 }

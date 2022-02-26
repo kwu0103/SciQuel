@@ -45,10 +45,10 @@ function MainCard({
                     </div>
                 </Link>
                 <div className={styles.ImageContainer}>
-                    <Image className={styles.Image} src={imgSrc} alt={imgSrc} objectPosition="-20%" />
+                    <Image src={imgSrc} />
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

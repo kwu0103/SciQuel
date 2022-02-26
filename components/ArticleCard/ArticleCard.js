@@ -21,8 +21,8 @@ function ArticleCard({
 
     return (
         <Link href={href} passHref>
-            <div className={cardStyles.cardBackground + ' ' + utilStyles.grow}>
-                <Card style={{ maxWidth: '350px', backgroundColor: '#f8f8ff' }}>
+            <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}>
+                <Card >
                     <Card.Body>
                         {tag}
                         <small className={cardStyles.kind + ' ' + cardStyles.bodyFont}>{kind}</small>
@@ -40,7 +40,7 @@ function ArticleCard({
                     <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
                 </Card>
             </div>
-        </Link>
+        </Link >
     )
 }
 

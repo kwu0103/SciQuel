@@ -36,10 +36,10 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="row ">
-            <div class="col">
+      <div class="container ">
+        <div class="row g-0 d-flex justify-content-around">
+          <div class="row g-0">
+            <div class="col g-0">
               <div className={styles.maincard}>
                 {mainCard}
               </div>
@@ -47,14 +47,14 @@ export default function index() {
             </div>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-3 g-3">
-            <div class="col">
+          <div class="row g-0 flex-row">
+            <div class="col g-0">
               {articleCard}
             </div>
-            <div class="col">
+            <div class="col g-0">
               {articleCard}
             </div>
-            <div class="col">
+            <div class="col g-0">
               {articleCard}
             </div>
 

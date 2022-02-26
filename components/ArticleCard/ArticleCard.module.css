@@ -8,13 +8,23 @@
 	padding-right: 10px;
 	align-items: center;
 	justify-content: center;
-	width: fit-content;
-	height: inherit;
+	/* width: fit-content;
+	height: inherit; */
 	background-color: #d28161;
 	border-radius: 10px;
 }
 
 .cardBackground {
+	/* background-color: #f8f8ff; */
+	min-width: 228px;
+
+	/* min-height: 313px; */
+	/* max-height: 328px; */
+	/*  */
+	/* minWidth: '328px', minheight: '30px' }} */
+
+	/* min-width: 218px; */
+	/* min-height: 313px; */
 	margin: 1em;
 	padding: 10px;
 	border-radius: 15px;
