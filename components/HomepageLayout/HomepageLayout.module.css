@@ -2,8 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
+	flex-wrap: nowrap;
+	margin: 50px;
 }
 
 .main {

@@ -32,23 +32,23 @@ function MainCard({
     }, []);
 
     return (
-        <div class="mh-100" >
-            <div className={styles.MainCard}>
-                <Link href={href} passHref={true}>
-                    <div>
-                        <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
-                            {tag}
-                            <div className={styles.HeadlineText}>{headline}</div>
-                            <div className={styles.SubheadlineText}>{subheadline}</div>
-                        </div>
-                        <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+        // <div class="mh-100" > </div >
+        <div className={styles.MainCard}>
+            <Link href={href} passHref={true}>
+                <div>
+                    <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
+                        {tag}
+                        <div className={styles.HeadlineText}>{headline}</div>
+                        <div className={styles.SubheadlineText}>{subheadline}</div>
                     </div>
-                </Link>
-                <div className={styles.ImageContainer}>
-                    <Image src={imgSrc} />
+                    <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div>
+            </Link>
+            <div className={styles.ImageContainer}>
+                <Image src={imgSrc} />
             </div>
-        </div >
+        </div>
+
     );
 }
 

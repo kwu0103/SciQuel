@@ -36,7 +36,7 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
-      <div class="container ">
+      <div class="w-70 ">
         <div class="row g-0 d-flex justify-content-around">
           <div class="row g-0">
             <div class="col g-0">
