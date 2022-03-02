@@ -5,7 +5,9 @@ import styles from "./contributorLayout.module.css"
 export default function ContributorLayout({children}){
     return (
         <>
-            <Header/>
+            <header>
+                <Header/>
+            </header>
                 <div className={styles.container}>
                     <main className={styles.main}>{children}</main>
                 </div>

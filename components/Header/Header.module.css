@@ -10,16 +10,51 @@
     margin: 0 auto;
 }
 
+.nav > h4{
+    cursor: pointer;
+    margin:inherit;
+    text-decoration: none;
+    background: #69A297;
+    font-size: 14px;
+    padding: 16px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: all 0.125s ease;
+}
+
+.nav > h4:hover{
+    background-color: #51726b;
+}
+
 .nav > a {
     margin:inherit;
     text-decoration: none;
     background: #69A297;
     font-size: 14px;
-    padding: 12px 16px;
+    padding: 12px 40px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
     color: white;
+    transition: all 0.125s ease;
+}
+
+.list{
+    padding: 12px 40px;
+}
+
+.nav > .list > a {
+    margin:inherit;
+    text-decoration: none;
+    background: #69A297;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: white;
+    padding: 12px 50px;
     transition: all 0.125s ease;
 }
 
@@ -29,8 +64,13 @@
 
 .nav > a:hover {
     background-color: #51726b;
+    /* background-color: #337CA0; */
 }
 
+.nav > .list > a:hover {
+    background-color: #51726b;
+    /* background-color: #337CA0; */
+}
 .search{
     display: flex;
     justify-content: center;
@@ -52,4 +92,55 @@
 
 .input::placeholder { 
     color: white;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu > div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 790px) {
+    .search{
+        background-color: #69A297;
+    }
+}
+
+/* GitHub header width 700 */
+@media only screen and (max-width: 750px) {
+    .search{
+        visibility: hidden;
+    }
+    .nav{
+        display: flex-start;
+    }
+    .nav > a {
+        visibility: hidden;
+    }
+    /*Logo*/
+    .nav > h4 {
+        margin-left: 220px;
+        /* margin: 0 auto; */
+    }
+    .menu{
+        display: block;
+        padding: 10px;
+        margin-left: -450px;
+    }
+    .list{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0px;
+        top: 4vh;
+        width: 100%;
+        background-color: #69A297;
+    }
 }
