@@ -31,7 +31,7 @@ function Article({
                             {subtitle}
                         </h2>
                     </div>
-                </div>
+                
                 <div className={utilStyles.centerarticle}>
                     <b>Article</b> | <b>Essay</b> | {tag}
                     <br /> <br />
@@ -43,6 +43,7 @@ function Article({
                     </h5>
                     <br />
                     {children}
+                </div>
                 </div>
             </article>
         </>

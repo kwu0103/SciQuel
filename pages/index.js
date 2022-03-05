@@ -4,7 +4,6 @@ import ArticleCard from "../components/ArticleCard/ArticleCard";
 import BiologyTag from "../components/Tag/BiologyTag";
 
 import styles from "../components/HomepageLayout/HomepageLayout.module.css";
-
 export default function index() {
 
   const mainCard = <MainCard 
