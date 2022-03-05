@@ -1,14 +1,20 @@
+import React, {useState} from 'react';
 import Link from 'next/Link'
 import styles from './header.module.css'
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = showMenu ? styles.list : styles.listClose;
+  const toggleMenuBlank = showMenu ? styles.blank : styles.blankClose;
+  
   return (
+    <div>
     <nav className={styles.nav}>
       <Link href="/"> 
         <h4>SciQuel</h4>
       </Link>
       
-      <div className={styles.list}>
+      <div className={toggleMenu}>
         <Link href="/">
           <a>Latest</a>
         </Link>
@@ -34,11 +40,12 @@ export default function Header() {
         <a>Sign in</a>
       </Link>
 
-      <div className={styles.menu}>
+      <div className={styles.menu} onClick={() => setShowMenu(!showMenu)}>
         <div></div>
         <div></div>
         <div></div>
       </div>
     </nav>
+    </div>
   )
 }

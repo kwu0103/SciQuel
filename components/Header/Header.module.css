@@ -45,7 +45,24 @@
     padding: 12px 40px;
 }
 
-.nav > .list > a {
+.list > a {
+    margin:inherit;
+    text-decoration: none;
+    background: #69A297;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: white;
+    padding: 12px 50px;
+    transition: all 0.125s ease;
+}
+
+.listClose{
+    padding: 12px 40px;
+}
+
+.listClose > a {
     margin:inherit;
     text-decoration: none;
     background: #69A297;
@@ -142,5 +159,24 @@
         top: 4vh;
         width: 100%;
         background-color: #69A297;
+    }
+    .list > a {
+        margin:inherit;
+        text-decoration: none;
+        background: #69A297;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.025em;
+        color: white;
+        padding: 12px 50px;
+        transition: all 0.125s ease;
+    }
+    .listClose{
+        display: none;
+    }
+    .blank{
+        background-color: white;
+        padding-bottom: 190px;
     }
 }
