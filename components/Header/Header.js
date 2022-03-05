@@ -5,11 +5,10 @@ import styles from './header.module.css'
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = showMenu ? styles.list : styles.listClose;
-  const toggleMenuBlank = showMenu ? styles.blank : styles.blankClose;
+  const toggleMenuNav = showMenu ? styles.navOpen : styles.nav;
   
   return (
-    <div>
-    <nav className={styles.nav}>
+    <nav className={toggleMenuNav}>
       <Link href="/"> 
         <h4>SciQuel</h4>
       </Link>
@@ -46,6 +45,5 @@ export default function Header() {
         <div></div>
       </div>
     </nav>
-    </div>
   )
 }

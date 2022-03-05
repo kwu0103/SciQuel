@@ -123,6 +123,61 @@
     margin: 5px;
 }
 
+.navOpen {
+    min-width: auto;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: #69A297;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.navOpen > h4{
+    cursor: pointer;
+    margin:inherit;
+    text-decoration: none;
+    background: #69A297;
+    font-size: 14px;
+    padding: 16px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: all 0.125s ease;
+}
+
+.navOpen > h4:hover{
+    background-color: #51726b;
+}
+
+.navOpen > a {
+    margin:inherit;
+    text-decoration: none;
+    background: #69A297;
+    font-size: 14px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: all 0.125s ease;
+}
+
+.navOpen > form {
+    margin-left: 50px;
+}
+
+.navOpen > a:hover {
+    background-color: #51726b;
+}
+
+.navOpen > .list > a:hover {
+    background-color: #51726b;
+}
+
 @media only screen and (max-width: 790px) {
     .search{
         background-color: #69A297;
@@ -137,13 +192,19 @@
     .nav{
         display: flex-start;
     }
+    .navOpen{
+        display: flex-start;
+        padding-bottom: 230px;
+    }
     .nav > a {
         visibility: hidden;
     }
     /*Logo*/
     .nav > h4 {
         margin-left: 220px;
-        /* margin: 0 auto; */
+    }
+    .navOpen > h4{
+        margin-left: 220px;
     }
     .menu{
         display: block;
