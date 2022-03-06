@@ -39,8 +39,8 @@ export default function index() {
       <div class="mx-auto w-75"  >
         <div class="row g-0">
 
-          <div class="row g-0 ">
-            <div class="col g-0">
+          <div class="row justify-content-center g-0">
+            <div class="col-10">
               <div className={styles.maincard}>
                 {mainCard}
               </div>
@@ -59,9 +59,17 @@ export default function index() {
               {articleCard}
             </div>
 
+            <div class="col g-0">
+              {articleCard}
+            </div>
+            <div class="col g-0">
+              {articleCard}
+            </div>
+            <div class="col g-0">
+              {articleCard}
+            </div>
+
           </div>
-
-
 
         </div>
       </div>

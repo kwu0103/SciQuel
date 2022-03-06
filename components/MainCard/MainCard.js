@@ -32,10 +32,9 @@ function MainCard({
     }, []);
 
     return (
-        // <div class="mh-100" > </div >
         <div className={styles.MainCard}>
-            <Link href={href} passHref={true}>
-                <div>
+            <Link href={href} passHref={true} >
+                <div class="mt-4">
                     <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
@@ -45,10 +44,9 @@ function MainCard({
                 </div>
             </Link>
             <div className={styles.ImageContainer}>
-                <Image src={imgSrc} />
+                <Image className={styles.Image} src={imgSrc} />
             </div>
         </div>
-
     );
 }
 

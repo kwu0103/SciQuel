@@ -37,6 +37,7 @@ function ArticleCard({
                             </Card.Text>
                         </div>
                     </Card.Body>
+
                     <Card.Img className={cardStyles.cardPic} variant="bottom" src={imgSrc} />
                 </Card>
             </div>

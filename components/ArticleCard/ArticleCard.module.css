@@ -15,16 +15,9 @@
 }
 
 .cardBackground {
-	/* background-color: #f8f8ff; */
-	min-width: 228px;
+	min-width: 318px;
+	/* max-width: 500px; */
 
-	/* min-height: 313px; */
-	/* max-height: 328px; */
-	/*  */
-	/* minWidth: '328px', minheight: '30px' }} */
-
-	/* min-width: 218px; */
-	/* min-height: 313px; */
 	margin: 1em;
 	padding: 10px;
 	border-radius: 15px;
