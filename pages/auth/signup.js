@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PhoneInput from 'react-phone-input-2'
 
-function signup() {
+function Signup() {
     const [value, setValue] = useState();
   return (
     <div class="flex items-center min-h-screen bg-gray-50">
@@ -70,4 +70,4 @@ function signup() {
   )
 }
 
-export default signup
+export default Signup
