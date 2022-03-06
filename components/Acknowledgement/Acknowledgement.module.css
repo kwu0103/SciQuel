@@ -3,7 +3,8 @@
 }
 
 .content {
-    font-size: 75%;
+    font-family: 'Source Serif Pro';
+    font-size: 12pt;
     font-style: italic;
     color: #6D6D6D;
 }
