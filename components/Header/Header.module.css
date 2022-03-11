@@ -1,5 +1,5 @@
 .nav {
-    min-width: auto;
+    overflow: hidden;
     display: flex;
     justify-content:space-evenly;
     flex-direction: row;

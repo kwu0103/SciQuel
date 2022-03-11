@@ -31,18 +31,20 @@
 
 .centertitle {
     margin-left: 100px;
-    max-width: 50%;
+    max-width: 55%;
+    transform: translateY(-50px);
 }
 
 .centersubtitle {
     margin-left: 100px;
     max-width: 40%;
+    transform: translateY(-50px);
 }
 
 .centerarticle{
     max-width: 45rem;
     padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    margin: 3rem auto 2rem;
 }
 
 .background {
@@ -52,6 +54,7 @@
     color: white;
     background-size: cover;
     padding: 200px 0 0;  
+    min-width: 100%;
 }
 
 .grow{
