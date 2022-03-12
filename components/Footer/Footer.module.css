@@ -77,11 +77,7 @@
     height: 40px;
     font-size: 10px;
     padding: 8px 16px;
-<<<<<<< HEAD
     width: 120px;
-=======
-    width: 100px;
->>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
 }
 
 .icon{
@@ -93,7 +89,6 @@
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .right{
     display: flex;
     flex-direction: column;
@@ -126,10 +121,4 @@
     .button{
         height: 41px;
     }
-=======
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
->>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
 }

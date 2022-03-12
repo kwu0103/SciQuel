@@ -13,7 +13,6 @@ export default function Header() {
       <Link href="/"> 
         <h4>SciQuel</h4>
       </Link>
-<<<<<<< HEAD
       
       <div className={toggleMenu}>
         <Link href="/">
@@ -33,21 +32,6 @@ export default function Header() {
         </Link>
       </div>
 
-=======
-
-      <Link href="/">
-        <a>Read</a>
-      </Link>
-
-      <Link href="/">
-        <a>Topic</a>
-      </Link>
-
-      <Link href="/">
-        <a>About</a>
-      </Link>
-      
->>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
       <form className={styles.search}>
         <input className={styles.input} placeholder="Search Sciquel" />
       </form>
