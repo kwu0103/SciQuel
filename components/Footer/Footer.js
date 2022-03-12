@@ -1,7 +1,13 @@
 import Link from "next/link"
+<<<<<<< HEAD
 import styles from "./Footer.module.css"
 import Image from "next/image"
 
+=======
+import styles from "./footer.module.css"
+import Image
+ from "next/image"
+>>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
 export default function Footer() {
     const onSubscribe = (e) => {
         e.preventDefault();
@@ -12,6 +18,7 @@ export default function Footer() {
     return (
         <div className={styles.container}>
             <div className={styles.flex}>
+<<<<<<< HEAD
                 <div>
                     <h6 className={styles.text}>Get a weekly dose of accessible science to your inbox</h6>
                     <form onSubmit={onSubscribe}>
@@ -21,6 +28,15 @@ export default function Footer() {
                 </div>
                 <div className={styles.right}>
                     <h6 className={styles.logo}>SciQuel</h6>
+=======
+                <div className={styles.emailForm}>
+                    <h6 className={styles.text}>Get a weekly dose of accessible science to your inbox</h6>
+                    <input className={styles.input} placeholder="sciquel@gmail.com" />
+                    <input type="submit" className={styles.button} value="Subscribe"/>
+                </div>
+                <div>
+                    <h6 className={styles.text}>SciQuel</h6>
+>>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
                     <div className={styles.social}>
                         <Link href="/">
                             <a><div className={styles.icon}><Image src="/instagram.svg" width={20} height={20} alt="instagram"/></div></a>

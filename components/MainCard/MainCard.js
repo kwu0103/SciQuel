@@ -37,7 +37,11 @@ function MainCard({
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
                     </div>
+<<<<<<< HEAD
                     <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+=======
+                    <p className={styles.ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+>>>>>>> 8123e24752a66d1abfcfab0ac38d76e0713e946f
                 </div>
             </Link>
             <div className={styles.ImageContainer}>
