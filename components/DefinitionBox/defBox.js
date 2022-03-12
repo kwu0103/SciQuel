@@ -19,9 +19,9 @@
                                 {inContext}
 
             </div> */}
-            <Card    style={{ width: '14em', height: '50em'}} className={defStyles.defBox}>
+            <Card style={{ width: '14em'}} className={defStyles.defBox}>
                         <Card.Body>
-                            <Card.Text>
+                            <Card.Text className={defStyles.cardText}>
                                 <p className={defStyles.title}>Term</p>
                                 <strong>{term}</strong>
                                 <hr style = {{width: '4em'}}/>

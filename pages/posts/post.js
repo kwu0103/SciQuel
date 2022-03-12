@@ -11,7 +11,7 @@ import DefBox from "../../components/DefinitionBox/defBox";
 import styles from "./post.module.css";
 import defStyles from "../../components/DefinitionBox/defBox.module.css";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useLayoutEffect } from "react";
 
 /* global document */
 function Post(){
@@ -27,6 +27,7 @@ function Post(){
     useEffect(()=>{
         initialize();
         defText.current.onclick = () => {
+          console.log("clicked");
             if (defBox.current.classList.contains(defStyles.hide)){
                 defBox.current.classList.remove(defStyles.hide);
                 defBox.current.classList.add(defStyles.show);
@@ -35,26 +36,35 @@ function Post(){
             defBox.current.classList.remove(defStyles.show);
             defBox.current.classList.add(defStyles.hide);
             }
+        };
+        //scroll to disappear
+        if (typeof window !== "undefined") {
+          window.onscroll = function() {
+            console.log('scrolling');
+            defBox.current.classList.remove(defStyles.show);
+            defBox.current.classList.add(defStyles.hide);
 
         };
+
+      };
+        
+
+
     }, []);
 
-    const click=() => {
-        // defBox.current.classList.remove(defStyles.hide);
-        // defBox.current.classList.add(defStyles.show);
-        // if (defBox.current.classList.includes(defStyles.hide)){
-        // defBox.current.classList.remove(defStyles.hide);
-        // defBox.current.classList.add(defStyles.show);
-        // }else{
-        //     defBox.current.classList.remove(defStyles.show);
-        //     defBox.current.classList.add(defStyles.hide);
-        // }
+    const scroll=() => {
 
     }
 
     return (
        <>
         <Header />
+        <div ref = {defBox}>
+                    <DefBox 
+                    term = "a" 
+                    definition="b"
+                    inContext="c"
+                /></div>
 
                       <Article
                       title="Lights. Camera. Action!"
@@ -67,18 +77,9 @@ function Post(){
                       date="2021-07-05"
                       length="8 min read"
                     >
-                    <div ref = {defBox}>
-                    <DefBox 
-                    term = "a" 
-                    definition="b"
-                    inContext="c"
-                /></div>
-                    {/* <div className = {styles.articleText}> */}
-                        {/* <p>
-                            On a sunny, nondescript Hawaiian day, a <button ref = {defText} onclick = {click()}className = {styles.defText}>Vibrio fischeri</button>backterium arises the same as on most other nondescript days: homeless. It hurries along on a ride to work. No, not by car. Not onboard a trolley either. Yes! The great, dynamic Pacific Ocean current. Currency-free and open to all, it’s the road to opportunity and fortune for aquatic hard workers like the <i>V.fischeri</i> we are observing. Maybe even the acting job our protagonist hopes to get. If it had eyes, it would see that all around it were other applicants – after all, no job is guaranteed – other small, microscopic organisms that, like it, are homeless in an underwater, majority-homeless universe. The world really is teeming with life. For our silent, stubby V. fischeri, it’s not only a career on the line, but its livelihood. And not only its livelihood, but the livelihood of another animal we call the Hawaiian bobtail squid. Squid, meet <i>V. fischeri</i>. Bacterium, meet our reader. <i>Hi!</i>
-                        </p> */}
+
                         <p>
-          On a sunny, nondescript Hawaiian day, a <i>Vibrio fischeri</i>{" "}
+          On a sunny, nondescript Hawaiian day, a <button ref = {defText} onscroll = {scroll()}className = {styles.defText}>Vibrio fischeri</button>
           backterium arises the same as on most other nondescript days:
           homeless. It hurries along on a ride to work. No, not by car. Not
           onboard a trolley either. Yes! The great, dynamic Pacific Ocean
