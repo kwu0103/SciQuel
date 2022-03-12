@@ -32,7 +32,7 @@ function MainCard({
     }, []);
 
     return (
-        <div className={styles.MainCard}>
+        <div className={styles.MainCard} >
             <Link href={href} passHref={true} >
                 <div class="mt-4">
                     <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
