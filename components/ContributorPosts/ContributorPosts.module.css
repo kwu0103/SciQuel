@@ -1,0 +1,36 @@
+.numLink{
+    color: #77423E;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+.breakLink{
+    color: #77423E;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.prevLink{
+    color: #77423E;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nextLink{
+    color: #77423E;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.numLink:focus {
+    text-decoration: dashed;
+}
+
+.numLink:focus:before{
+    content: "["
+}
+
+.numLink:focus::after{
+    content: "]"
+}

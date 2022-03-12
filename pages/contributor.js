@@ -3,35 +3,10 @@ import ArticleCard from "../components/ArticleCard/ArticleCard";
 import ContributorLayout from "../components/ContributorLayout/contributorLayout";
 import styles from "../components/ContributorLayout/contributorLayout.module.css"
 import BiologyTag from "../components/Tag/BiologyTag";
-import axios from 'axios';
-import Pagination from "../components/ContributorLayout/pagination";
-import Posts from "../components/ContributorLayout/posts";
 import React, { useState, useEffect } from "react";
+import ContributorPosts from "../components/ContributorPosts/ContributorPosts"
 
 function Contributor(){
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(12);
-  
-    useEffect(() => {
-      const fetchPosts = async () => {
-        setLoading(true);
-        const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-        setPosts(res.data);
-        setLoading(false);
-    };
-  
-      fetchPosts();
-    }, []);
-  
-    // Get current posts
-    const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  
-    // Change page
-    const paginate = pageNumber => setCurrentPage(pageNumber);
 
     const contributorName = 'Edward Chen';
     const spans = ['biology', 'math'];
@@ -66,26 +41,7 @@ function Contributor(){
                 icons = {icons}
             />
             <div className={styles.right}>
-                {/* <section className={styles.cards}>
-                    {articleCard}
-                    {articleCard}
-                    {articleCard}
-                </section>
-                <section className={styles.cards}>
-                    {articleCard}
-                    {articleCard}
-                    {articleCard}
-                </section> */}
-                <Posts posts={currentPosts} loading={loading} />
-                <div className={styles.pagination}>
-                    {/* <button onClick={() => setCurrentPage(currentPage - 1)}>Prev</button> */}
-                    <Pagination
-                        postsPerPage={postsPerPage}
-                        totalPosts={posts.length}
-                        paginate={paginate}
-                    />
-                    {/* <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button> */}
-                </div>
+                <ContributorPosts postsPerPage={12}/>
             </div>
         </ContributorLayout>
     )

@@ -6,7 +6,7 @@ export default function ContributorLayout({children}){
     return (
         <>
             <Header/>
-                <div className={styles.container}>
+                <div>
                     <main className={styles.main}>{children}</main>
                 </div>
             <Footer/>
