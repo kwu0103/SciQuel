@@ -13,9 +13,9 @@ export default function HomepageLayout({ children }) {
       </Head>
 
       <Header />
-      <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
-      </div>
+      {/* <div className={styles.container}> */}
+      <main className={styles.main}>{children}</main>
+      {/* </div> */}
       <Footer />
     </>
   );

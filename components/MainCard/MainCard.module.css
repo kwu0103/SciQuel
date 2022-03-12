@@ -1,18 +1,14 @@
 .MainCard {
 	display: flex;
+
 	/* flex-direction: row; */
 	justify-content: center;
 	align-items: center;
 }
 
 .HeadlineBox {
-	/* width: fit-content;
-	height: inherit; */
-	max-width: 507px;
-	/* max-height: 520px; */
-
-	min-width: 450px;
-	width: fit-content;
+	min-width: 400px;
+	width: auto;
 	border-radius: 5px;
 
 	background-image: linear-gradient(#1a6f8c, #63a59d);
@@ -55,13 +51,10 @@
 	transform: scale(1.1) translateY(10px);
 }
 
-/* .Image {
-	position: absolute;
-	width: 626px;
-	height: 368px;
-	left: 642px;
-	top: 189px;
-} */
+.Image {
+	max-width: 100%;
+	max-height: 100%;
+}
 
 /* padding-bottom: 30px; */
 /* max-height: 527px; */
@@ -72,10 +65,10 @@
 	position: relative;
 	object-fit: cover;
 	flex-shrink: auto;
+	/* 
+	width: 70%;
+	height: 70%; */
 
-	min-width: 626px;
-	min-height: 168px;
-
-	/* max-width: 826px; */
+	min-width: 600px;
 	flex-wrap: wrap;
 }

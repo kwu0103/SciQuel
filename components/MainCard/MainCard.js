@@ -44,7 +44,7 @@ function MainCard({
                 </div>
             </Link>
             <div className={styles.ImageContainer}>
-                <Image className={styles.Image} src={imgSrc} />
+                <Image class={styles.Image} src={imgSrc} />
             </div>
         </div>
     );

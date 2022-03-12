@@ -36,41 +36,27 @@ export default function index() {
   return (
     <HomepageLayout>
       <h1>Read what&apos;s new</h1>
-      <div class="mx-auto w-75"  >
-        <div class="row g-0">
+      {/* class="mx-auto w-75"*/}
+      <div>
+        <div class="d-flex justify-content-center">
 
-          <div class="row justify-content-center g-0">
-            <div class="col-10">
-              <div className={styles.maincard}>
-                {mainCard}
-              </div>
 
+          <div style={{ width: '1620px', paddingLeft: '5%', paddingRight: '5%' }}>
+            <div >
+              {mainCard}
             </div>
           </div>
+        </div>
 
-          <div class="row g-0">
-            <div class="col g-0">
-              {articleCard}
-            </div>
-            <div class="col g-0">
-              {articleCard}
-            </div>
-            <div class="col g-0">
-              {articleCard}
-            </div>
-
-            <div class="col g-0">
-              {articleCard}
-            </div>
-            <div class="col g-0">
-              {articleCard}
-            </div>
-            <div class="col g-0">
-              {articleCard}
-            </div>
-
+        <div class="d-flex justify-content-center">
+          <div class="row row-cols-md-1  row-cols-md-2 row-cols-lg-3" style={{ width: '1620px', paddingLeft: '5%', paddingRight: '5%' }}>
+            <div>{articleCard}</div>
+            <div>{articleCard}</div>
+            <div>{articleCard}</div>
+            <div>{articleCard}</div>
+            <div>{articleCard}</div>
+            <div>{articleCard}</div>
           </div>
-
         </div>
       </div>
 
