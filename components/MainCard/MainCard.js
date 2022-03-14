@@ -4,9 +4,7 @@ import { useEffect, useRef } from "react";
 
 import { Card } from 'react-bootstrap';
 import styles from "./MainCard.module.css";
-import utilStyles from "../../styles/utils.module.css";
-
-
+import utilStyles from "../../styles/utils.module.css";// change hover effect here
 
 function MainCard({
     tag,
@@ -34,7 +32,7 @@ function MainCard({
     return (
         <div className={styles.MainCard} >
             <Link href={href} passHref={true} >
-                <div class="mt-4">
+                <div class=" mt-4">
                     <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>

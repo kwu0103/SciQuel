@@ -21,7 +21,8 @@ function ArticleCard({
 
     return (
         <Link href={href} passHref>
-            <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}>
+            {/* <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}> */}
+            <div className={cardStyles.cardBackground + ' ' + utilStyles.grow}>
                 <Card >
                     <Card.Body>
                         {tag}
