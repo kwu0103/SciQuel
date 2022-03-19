@@ -23,7 +23,7 @@ export default function index() {
 
   const articleCard = <ArticleCard
     headline="Lights. Camera. Action!"
-    subheadline="How the Hawaiian bobtail squid brings a creative vision to its..."
+    subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
     contributor="Edward Chen"
     kind="ARTICLE"
     tag={BiologyTag}
@@ -40,9 +40,9 @@ export default function index() {
       <div>
         <div class="d-flex justify-content-center">
           <div style={{ width: '1490px', paddingLeft: '3rem', paddingRight: '3rem' }}>
-            <div >
-              {mainCard}
-            </div>
+
+            {mainCard}
+
           </div>
         </div>
 

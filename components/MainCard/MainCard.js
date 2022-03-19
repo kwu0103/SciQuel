@@ -30,25 +30,22 @@ function MainCard({
     }, []);
 
     return (
+
         <div className={styles.MainCard} >
-            {/* <Link href={href} passHref={true} > */}
-            <div>
-                <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
-                    {tag}
-                    <div className={styles.HeadlineText}>{headline}</div>
-                    <div class="d-md-flex">
-                        <div class="overflow-auto mb-3 mb-md-0 mr-md-3 " style={{ maxWidth: "660px", maxHeight: "100px" }}>
+            <Link href={href} passHref={true} >
+                <div>
+                    <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
+                        {tag}
+                        <div className={styles.HeadlineText}>{headline}</div>
+                        <div class="d-md-flex">
                             <div className={styles.SubheadlineText}>{subheadline}</div>
                         </div>
-
                     </div>
-
+                    <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                 </div >
-                <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
-            </div >
-            {/* </Link > */}
+            </Link >
             <div className={styles.ImageContainer}>
-                <Image class={styles.Image} src={imgSrc} />
+                <Image src={imgSrc} />
             </div>
         </div >
     );
