@@ -1,40 +1,32 @@
  import {Card} from 'react-bootstrap';
  import defStyles from "./defBox.module.css";
+ import { useEffect, useRef } from "react";
+
 
  function DefBox( {
      term,
      definition,
-     inContext
- }){
-     return (
-         <>
-            {/* <div className={defStyles.defBox}>
-                             <p className={defStyles.title}>Term</p>
-                              <strong>{term}</strong>
-                                <hr style = {{width: '4em'}}/>
-                                <p className={defStyles.title}>Definition</p>
-                                {definition}
-                                <hr style = {{width: '4em'}}/>
-                                <p className={defStyles.title}>In Context</p>
-                                {inContext}
+     inContext}){
 
-            </div> */}
-            <Card style={{ width: '14em'}} className={defStyles.defBox}>
-                        <Card.Body>
-                            <Card.Text className={defStyles.cardText}>
-                                <p className={defStyles.title}>Term</p>
-                                <strong>{term}</strong>
-                                <hr style = {{width: '4em'}}/>
-                                <p className={defStyles.title}>Definition</p>
-                                {definition}
-                                <hr style = {{width: '4em'}}/>
-                                <p className={defStyles.title}>In Context</p>
-                                {inContext}
-                            </Card.Text>
-                        </Card.Body>
-            </Card>
-         </>
-     )
+
+return(
+    <div className={defStyles.defBox}>
+        <p className={defStyles.title}>Term</p>
+        <strong>{term}</strong>
+        <hr style = {{width: '7em'}}/>
+                <p className={defStyles.title}>Definition</p>
+                {/* <button>hi</button> */}
+                {/* <button ref = {cancelBtn} className = {defStyles.cancel} 
+                ></button> */}
+
+
+             {definition}
+              <hr style = {{width: '7em'}}/>
+                <p className={defStyles.title}>In Context</p>
+               {inContext}
+
+    </div>
+)
  }
 
  export default DefBox;

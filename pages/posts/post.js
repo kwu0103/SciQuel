@@ -18,6 +18,9 @@ function Post(){
 
     const defBox = useRef();
     const defText = useRef();
+    const cancelBtn = useRef();
+    const text = useRef();
+
 
     const initialize = () =>{
         console.log("initialized");
@@ -31,18 +34,43 @@ function Post(){
             if (defBox.current.classList.contains(defStyles.hide)){
                 defBox.current.classList.remove(defStyles.hide);
                 defBox.current.classList.add(defStyles.show);
+                cancelBtn.current.classList.remove(defStyles.hide);
+                cancelBtn.current.classList.add(defStyles.show);
             }
             else{
+
             defBox.current.classList.remove(defStyles.show);
             defBox.current.classList.add(defStyles.hide);
+            cancelBtn.current.classList.remove(defStyles.show);
+            cancelBtn.current.classList.add(defStyles.hide);
             }
         };
+        cancelBtn.current.onclick = () => {
+          console.log("clicked");
+          defBox.current.classList.remove(defStyles.show);
+          defBox.current.classList.add(defStyles.hide);
+          cancelBtn.current.classList.remove(defStyles.show);
+          cancelBtn.current.classList.add(defStyles.hide);
+        };  
+
+        // if (defBox.current.classList.contains(defStyles.show)){
+        // text.current.onclick = () => {
+        //   console.log("clicked");
+        //   defBox.current.classList.remove(defStyles.show);
+        //   defBox.current.classList.add(defStyles.hide);
+        //   cancelBtn.current.classList.remove(defStyles.show);
+        //   cancelBtn.current.classList.add(defStyles.hide);
+        //   }
+        // };  
+
         //scroll to disappear
         if (typeof window !== "undefined") {
           window.onscroll = function() {
             console.log('scrolling');
             defBox.current.classList.remove(defStyles.show);
             defBox.current.classList.add(defStyles.hide);
+            cancelBtn.current.classList.remove(defStyles.show);
+            cancelBtn.current.classList.add(defStyles.hide);
 
         };
 
@@ -64,8 +92,8 @@ function Post(){
                     term = "a" 
                     definition="b"
                     inContext="c"
-                /></div>
-
+                />
+                </div>
                       <Article
                       title="Lights. Camera. Action!"
                       subtitle="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
@@ -77,7 +105,8 @@ function Post(){
                       date="2021-07-05"
                       length="8 min read"
                     >
-
+                    <button ref = {cancelBtn} className = {defStyles.cancel} ></button>
+                    <div ref = {text} >
                         <p>
           On a sunny, nondescript Hawaiian day, a <button ref = {defText} onscroll = {scroll()}className = {styles.defText}>Vibrio fischeri</button>
           backterium arises the same as on most other nondescript days:
@@ -260,20 +289,19 @@ function Post(){
           <br />
         </p>
         <Figure imgSrc="/fig2.png" imgAlt="figure 2" captionPosition="below">
-          <p>
             <b>
               Figure 2: Possible applications that utilize the principles of
               squid-bacteria symbiosis.
             </b>{" "}
             From dusky to dazzling and everything in between, this multifaceted
-            pair has a lot to offer. Can engineers design stealthier airplanes?
+            pair has a lot to offer. Can engineers design stealthier airplanes
             Camouflage that hides objects from infrared detectors? Improved
             proton transistors for next-generation bioelectronics? While
             airplanes coated with living, breathing, and glowing bacteria may
             sound silly, there may be other innovations that learn from the
             Hawaiian bobtail squid’s remarkable relationship with{" "}
             <i>Vibrio fischeri</i>.
-          </p>
+     
         </Figure>
         <p>
           And so concludes our dive into a world-reaching performance most of
@@ -290,7 +318,7 @@ function Post(){
           and breakfast. Either way, both actor and director will continue a
           cycle that ticks the ecosystem along, one night at a time.
         </p>
-
+        </div>
         <Acknowledgement>
           Cover Image: “Hawaiian Bobtail Squid” is licensed under CC BY-NC 4.0.
         </Acknowledgement>
@@ -308,7 +336,9 @@ function Post(){
         />
       </div>
       <Footer />
+      {/* <div ref = {text} className = {styles.clickBox}>
 
+</div> */}
     </>
     );
 {/* function Post() {

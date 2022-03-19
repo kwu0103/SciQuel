@@ -5,6 +5,7 @@
     letter-spacing: -0.05rem;
     margin: 1rem 0;
     font-family:'Alegreya Sans SC';
+    margin-top: 35%;
 }
   
 .headingXl {
@@ -54,7 +55,12 @@
     color: white;
     background-size: cover;
     padding: 200px 0 0;  
-    min-width: 100%;
+    /* min-width: 100%; */
+    width: auto;
+    height: 100vh;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
 }
 
 .grow{

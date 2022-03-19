@@ -52,9 +52,12 @@ function Article({
           <b>Article</b> | <b>Essay</b> | {tag}
           <br /> <br />
           <h5>{contributorSection}</h5>
-          <h5>
+          {/* <h5> */}
+          <b>
             <Date dateString={date} /> | {length}
-          </h5>
+            </b>
+            <br/>
+          {/* </h5> */}
           <br />
           {children}
         </div>
