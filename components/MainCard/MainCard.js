@@ -1,8 +1,7 @@
 import Image from "next/Image";
 import Link from "next/Link";
 import { useEffect, useRef } from "react";
-
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css";// change hover effect here
 
@@ -29,25 +28,28 @@ function MainCard({
         };
     }, []);
 
-    return (
 
+    return (
         <div className={styles.MainCard} >
-            <Link href={href} passHref={true} >
-                <div>
-                    <div class={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox}>
+            <Link href={href} passHref={true}>
+                <div class="mt-4">
+                    <div className={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox} >
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
-                        <div class="d-md-flex">
-                            <div className={styles.SubheadlineText}>{subheadline}</div>
-                        </div>
+                        <div className={styles.SubheadlineText}>{subheadline}</div>
+
                     </div>
                     <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
-                </div >
-            </Link >
+                </div>
+
+            </Link>
+
             <div className={styles.ImageContainer}>
-                <Image src={imgSrc} />
+
+                <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
             </div>
-        </div >
+
+        </div>
     );
 }
 

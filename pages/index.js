@@ -39,15 +39,13 @@ export default function index() {
       {/* class="mx-auto w-75"*/}
       <div>
         <div class="d-flex justify-content-center">
-          <div style={{ width: '1490px', paddingLeft: '3rem', paddingRight: '3rem' }}>
-
+          <div style={{ width: '1790px', height: '390px', paddingLeft: '2rem', paddingRight: '2rem' }}>
             {mainCard}
-
           </div>
         </div>
 
         <div class="d-flex justify-content-center">
-          <div class="row row-cols-md-1  row-cols-md-2 row-cols-lg-3" style={{ width: '1590px', paddingLeft: '1rem', paddingRight: '1rem' }}>
+          <div class="row row-cols-md-1  row-cols-md-2 row-cols-lg-3" style={{ width: '1790px', paddingLeft: '1rem', paddingRight: '1rem' }}>
             <div style={{ padding: "0px" }}>{articleCard}</div>
             <div style={{ padding: "0px" }}>{articleCard}</div>
             <div style={{ padding: "0px" }}>{articleCard}</div>
