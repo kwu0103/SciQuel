@@ -57,7 +57,7 @@
     padding: 200px 0 0;  
     /* min-width: 100%; */
     width: auto;
-    height: 100vh;
+    height: calc(100vh - 50px); /* entire screen minus navbar */
     /* position: fixed;
     top: 0;
     left: 0; */
