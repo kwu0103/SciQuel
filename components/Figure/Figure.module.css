@@ -3,6 +3,7 @@
     align-items: center;
 
     width: 150%;
+    max-width: 95vw;
     margin-left: 50%;
     transform: translateX(-50%);
 
@@ -33,4 +34,8 @@
 .above {
     margin-top: 40px;
     flex-direction: column-reverse;
+}
+
+.caption {
+    margin-top: 12px;
 }

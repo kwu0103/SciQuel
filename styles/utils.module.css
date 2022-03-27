@@ -30,28 +30,6 @@
 }
 
 .centertitle {
-	margin-left: 100px;
-	max-width: 50%;
-}
-
-.centersubtitle {
-	margin-left: 100px;
-	max-width: 40%;
-}
-
-.centerarticle {
-	max-width: 45rem;
-	padding: 0 1rem;
-	margin: 3rem auto 6rem;
-}
-
-.background {
-	overflow: hidden;
-	background-image: url('/bobtail.png');
-	background-repeat: no-repeat;
-	color: white;
-	background-size: cover;
-	padding: 200px 0 0;
 }
 
 .grow {
