@@ -4,7 +4,7 @@ import {Col, Row, Container} from "react-bootstrap";
 function tagTest(){
 
     return (
-        <div style={{backgroundColor: '#297A90', height: '100vh'}}>
+        <div style={{backgroundColor: '#DBE9E2', height: '100vh'}}>
                 <Tag color="#444F58">444F58</Tag>
                 <Tag color="#777472">777472</Tag>
                 <Tag color="#624563">624563</Tag>

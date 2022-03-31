@@ -18,7 +18,7 @@ function Post() {
   const defBox = useRef();
   const defText = useRef();
   const cancelBtn = useRef();
-  const text = useRef();
+  const page = useRef();
 
   useEffect(() => {
     defBox.current.classList.add(defStyles.hide);
@@ -30,8 +30,8 @@ function Post() {
         cancelBtn.current.classList.remove(defStyles.show);
         cancelBtn.current.classList.add(defStyles.hide);
       });
-      // click anywhere to hide defBox
-      window.addEventListener("mousedown", () => {
+      // click anywhere other than the box to hide defBox
+      page.current.addEventListener("mousedown", () => {
         if (defBox.current.classList.contains(defStyles.show)) {
           defBox.current.classList.remove(defStyles.show);
           defBox.current.classList.add(defStyles.hide);
@@ -81,6 +81,7 @@ function Post() {
       <div ref={defBox}>
         <DefBox term="a" definition="b" inContext="c" />
       </div>
+<div ref={page}>
       <Article
         title="Lights. Camera. Action!"
         subtitle="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
@@ -93,7 +94,7 @@ function Post() {
         length="8 min read"
       >
         <button ref={cancelBtn} className={defStyles.cancel}></button>
-        <div ref={text}>
+        <div >
           <p>
             On a sunny, nondescript Hawaiian day, a{" "}
             <button
@@ -323,22 +324,26 @@ function Post() {
           Cover Image: “Hawaiian Bobtail Squid” is licensed under CC BY-NC 4.0.
         </Acknowledgement>
       </Article>
-      <div style={{ marginLeft: "50%", transform: "translateX(-50%)" }}>
+      <div style={{ marginLeft: "48%", marginTop: "10%", marginBottom: "5%",transform: "translateX(-50%)" }}>
         <ContributorBox
           contributorName="Edward Chen"
-          desc="Edward Chen is a first-year Immunology MMSc student at Harvard Medical School. Though he used to think of himself as a seal person, writing this article has leaned him towards squid people."
+          desc=" is a first-year Immunology MMSc student at Harvard Medical School. Though he used to think of himself as a seal person, writing this article has leaned him towards squid people."
           image="/SciQuel_1.png"
         />
         <ContributorBox
           contributorName="Jovana Andrejevic"
-          desc="Jovana Andrejevic is a fifth-year Applied Physics Ph.D. student in the School of Engineering and Applied Sciences at Harvard University. She’s open-minded and is neither a squid nor a seal person."
+          desc=" is a fifth-year Applied Physics Ph.D. student in the School of Engineering and Applied Sciences at Harvard University. She’s open-minded and is neither a squid nor a seal person."
           image="/SciQuel_1.png"
         />
       </div>
       <Footer />
+      </div>
       {/* <div ref = {text} className = {styles.clickBox}>
 
 </div> */}
+      {/* <div className={styles.test}>
+        hi
+      </div> */}
     </>
   );
   {

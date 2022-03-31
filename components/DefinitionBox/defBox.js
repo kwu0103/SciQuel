@@ -13,7 +13,7 @@ return(
     <div className={defStyles.defBox}>
         <p className={defStyles.title}>Term</p>
         <strong>{term}</strong>
-        <hr style = {{width: '7em'}}/>
+        <hr style = {{width: '17em'}}/>
                 <p className={defStyles.title}>Definition</p>
                 {/* <button>hi</button> */}
                 {/* <button ref = {cancelBtn} className = {defStyles.cancel} 
@@ -21,7 +21,7 @@ return(
 
 
              {definition}
-              <hr style = {{width: '7em'}}/>
+              <hr style = {{width: '17em'}}/>
                 <p className={defStyles.title}>In Context</p>
                {inContext}
 
