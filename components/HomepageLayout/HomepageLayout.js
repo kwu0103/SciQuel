@@ -11,12 +11,12 @@ export default function HomepageLayout({ children }) {
       <Head>
         <title>SciQuel</title>
       </Head>
-      
-      <Header/>
-      <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
-      </div>
-      <Footer/>
+
+      <Header />
+      {/* <div className={styles.container}> */}
+      <main className={styles.main}>{children}</main>
+      {/* </div> */}
+      <Footer />
     </>
   );
 };
