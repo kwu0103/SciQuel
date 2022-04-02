@@ -20,7 +20,7 @@
 	padding-right: 75px;
 
 	margin-top: 27px;
-	margin-left: -130px;
+	margin-left: -140px;
 	cursor: pointer;
 }
 
@@ -44,7 +44,7 @@
 	color: grey;
 	font-size: large;
 	margin-top: 270px;
-	margin-left: -130px;
+	margin-left: -140px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -58,25 +58,19 @@
 	flex-shrink: 0;
 
 	/* margin-right: -110px; */
-	min-width: 700px;
-	max-width: 700px;
+	width: 700px;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
 	/* when the width is less than 30em, make both of the widths 100% */
-	.HeadlineBox {
-		position: relative;
-		opacity: 100%;
-		z-index: 1;
-	}
+	.HeadlineBox,
 	.ContributorText {
-		margin-top: 0;
-		position: relative;
-		background-color: white;
+		opacity: 100%;
 	}
 	.ImageContainer {
-		width: 100%;
+		margin-left: 100px;
+		position: absolute;
 		opacity: 50%;
-		z-index: 0;
+		width: 900px;
 	}
 }

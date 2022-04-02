@@ -2,10 +2,7 @@
 	display: inline-block;
 	font-size: 10px;
 	color: white;
-	margin-right: 10px;
-	padding: 7px;
-	padding-left: 10px;
-	padding-right: 10px;
+	margin-right: 2px;
 	align-items: center;
 	justify-content: center;
 	background-color: #d28161;
@@ -13,8 +10,9 @@
 }
 
 .cardBackground {
-	min-width: 330px;
+	min-width: 350px;
 	margin: 1rem;
+
 	padding: 10px;
 	border-radius: 15px;
 	cursor: pointer;
@@ -44,7 +42,7 @@
 	object-fit: cover;
 }
 .center {
-	margin-top: 2em;
+	margin-top: 1.25em;
 }
 
 .small {
@@ -63,22 +61,4 @@
 
 .body {
 	font-size: 18px;
-}
-
-.content {
-	background-color: lightgreen;
-	display: inline-block; /* inline block so the sidebar can be after the content in the markup */
-	width: calc(100% - 10em); /* 100% minus the width of the sidebar */
-}
-.sidebar {
-	background-color: lightpink;
-	float: left; /* floated left so it appears to the left of the content */
-	width: 10em;
-}
-@media (max-width: 30em) {
-	/* when the width is less than 30em, make both of the widths 100% */
-	.content,
-	.sidebar {
-		width: 100%;
-	}
 }

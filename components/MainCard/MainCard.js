@@ -47,7 +47,6 @@ function MainCard({
             </Link >
 
             <div className={styles.ImageContainer}>
-
                 <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
             </div>
 
