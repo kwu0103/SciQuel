@@ -64,3 +64,21 @@
 .body {
 	font-size: 18px;
 }
+
+.content {
+	background-color: lightgreen;
+	display: inline-block; /* inline block so the sidebar can be after the content in the markup */
+	width: calc(100% - 10em); /* 100% minus the width of the sidebar */
+}
+.sidebar {
+	background-color: lightpink;
+	float: left; /* floated left so it appears to the left of the content */
+	width: 10em;
+}
+@media (max-width: 30em) {
+	/* when the width is less than 30em, make both of the widths 100% */
+	.content,
+	.sidebar {
+		width: 100%;
+	}
+}
