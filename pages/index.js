@@ -41,7 +41,7 @@ export default function index() {
 
         <div class="d-flex justify-content-center">
 
-          <div style={{ width: '1790px', height: '390px', paddingLeft: '2rem', paddingRight: '2rem' }}>
+          <div style={{ width: '1790px', paddingLeft: '2rem', minHeight: '390px', paddingRight: '2rem', paddingBottom: '2rem' }}>
             {mainCard}
           </div>
         </div>

@@ -19,20 +19,23 @@ function MainCard({
     const HeadlineBox = useRef();
     const ContributorText = useRef();
 
-    useEffect(() => {
-        HeadlineBox.current.onmouseover = () => {
-            ContributorText.current.classList.add(styles.PseudoGrowHover);
-        };
-        HeadlineBox.current.onmouseout = () => {
-            ContributorText.current.classList.remove(styles.PseudoGrowHover);
-        };
-    }, []);
+    // useEffect(() => {
+    //     HeadlineBox.current.onmouseover = () => {
+    //         ContributorText.current.classList.add(styles.PseudoGrowHover);
+    //     };
+    //     HeadlineBox.current.onmouseout = () => {
+    //         ContributorText.current.classList.remove(styles.PseudoGrowHover);
+    //     };
+    // }, []);
 
 
     return (
-        <div className={styles.MainCard} >
+        <div className={styles.MainCard}>
+            <div className={styles.ImageContainer}>
+                <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
+            </div>
             <Link href={href} passHref={true}>
-                <div class="mt-4">
+                <div >
                     <div className={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox} >
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
@@ -43,15 +46,15 @@ function MainCard({
                         <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
                     </div>
                 </div>
-
-            </Link >
-
-            <div className={styles.ImageContainer}>
-                <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
-            </div>
-
-        </div >
+            </Link>
+        </div>
     );
 }
 
 export default MainCard;
+{/*  >
+
+    
+
+</Link >
+</div > */}
