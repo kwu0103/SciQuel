@@ -19,14 +19,14 @@ function MainCard({
     const HeadlineBox = useRef();
     const ContributorText = useRef();
 
-    // useEffect(() => {
-    //     HeadlineBox.current.onmouseover = () => {
-    //         ContributorText.current.classList.add(styles.PseudoGrowHover);
-    //     };
-    //     HeadlineBox.current.onmouseout = () => {
-    //         ContributorText.current.classList.remove(styles.PseudoGrowHover);
-    //     };
-    // }, []);
+    useEffect(() => {
+        HeadlineBox.current.onmouseover = () => {
+            ContributorText.current.classList.add(styles.PseudoGrowHover);
+        };
+        HeadlineBox.current.onmouseout = () => {
+            ContributorText.current.classList.remove(styles.PseudoGrowHover);
+        };
+    }, []);
 
 
     return (

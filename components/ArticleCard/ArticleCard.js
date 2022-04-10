@@ -32,7 +32,7 @@ function ArticleCard({
                             <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
                                 {subheadline}
                             </Card.Text>
-                            <div style={{ marginTop: "1.25em" }}>
+                            <div style={{ marginTop: "2.25em" }}>
                                 <Card.Text >
                                     <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
                                     <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>

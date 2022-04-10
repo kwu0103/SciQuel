@@ -5,7 +5,7 @@
 	margin-right: 2px;
 	align-items: center;
 	justify-content: center;
-	background-color: #d28161;
+	/* background-color: #d28161; */
 	border-radius: 10px;
 }
 
@@ -61,4 +61,8 @@
 
 .body {
 	font-size: 18px;
+}
+
+.tag{
+	margin-top: 0.25em;
 }
