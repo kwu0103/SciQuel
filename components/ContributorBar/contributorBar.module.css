@@ -10,17 +10,20 @@
 }
 
 .contributorName {
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: 'Alegreya Sans SC';
+    font-weight: bolder;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    
+    max-width: 150px;
 }
 
 .center {
-    padding: 5em; 
+    padding: 4em;
+    padding-top: 2em;
     justify-content: center;
-}
-
-.center h1 {
-    margin-bottom: 0.5em;
-    max-width: 150px;
 }
 
 .image {
