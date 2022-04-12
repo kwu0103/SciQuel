@@ -27,6 +27,8 @@ function ContributorBar({
               src={image}
               className={contributorBarStyle.image}
               alt={contributorName}
+              width={480}
+              height={480}
             />
             <h1 className={contributorBarStyle.contributorName}>
               {contributorName}
@@ -41,16 +43,22 @@ function ContributorBar({
               className={contributorBarStyle.logo}
               src={fb}
               alt="facebook"
+              width={32}
+              height={32}
             />
             <Image
               className={contributorBarStyle.logo}
               src={ins}
               alt="instagram"
+              width={32}
+              height={32}
             />
             <Image
               className={contributorBarStyle.logo}
               src={twitter}
               alt="twitter"
+              width={32}
+              height={32}
             />
           </div>
         </div>
