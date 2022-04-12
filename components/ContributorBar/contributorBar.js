@@ -24,11 +24,11 @@ function ContributorBar({ contributorName, description, tags, image, icons }) {
             <h1 className={contributorBarStyle.contributorName}>
               {contributorName}
             </h1>
-            {tags.map((tag, key) => (
-              <span key={key}>{tag}</span>
-            ))}
-            <br></br>
-            <br></br>
+            <div className={contributorBarStyle.tags}>
+              {tags.map((tag, key) => (
+                <span key={key}>{tag}</span>
+              ))}
+            </div>
             <p className={contributorBarStyle.param}>{description}</p>
             <Image
               className={contributorBarStyle.logo}
