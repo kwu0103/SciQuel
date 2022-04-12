@@ -13,9 +13,9 @@ function Contributor() {
   const tags = [BiologyTag, ChemistryTag];
   const image = "/SciQuel_1.png";
   const icons = {
-    fb: "/facebook@512px.png",
-    ins: "/instagram@512px.png",
-    twitter: "/twitter@512px.png",
+    facebook: ["/facebook@512px.png", "https://facebook.com"],
+    instagram: ["/instagram@512px.png", "https://instagram.com"],
+    twitter: ["/twitter@512px.png", "https://twitter.com"],
   };
   const articleCard = (
     <ArticleCard

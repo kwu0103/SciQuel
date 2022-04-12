@@ -1,11 +1,23 @@
 import Head from "next/Head";
-import contributorBarStyle from "./contributorBar.module.css";
 import Image from "next/Image";
 
-function ContributorBar({ contributorName, description, tags, image, icons }) {
-  const { color } = tags;
-  const { fb, ins, twitter } = icons;
+import contributorBarStyle from "./contributorBar.module.css";
 
+function ContributorBar({ contributorName, description, tags, image, icons }) {
+  const socials = [];
+  for (let [key, value] of Object.entries(icons)) {
+    socials.push(
+      <a target="_blank" rel="noreferrer" href={value[1]}>
+        <Image
+          className={contributorBarStyle.logo}
+          src={value[0]}
+          alt={key}
+          width={32}
+          height={32}
+        />
+      </a>
+    );
+  }
   return (
     <>
       <Head>
@@ -30,27 +42,11 @@ function ContributorBar({ contributorName, description, tags, image, icons }) {
               ))}
             </div>
             <p className={contributorBarStyle.param}>{description}</p>
-            <Image
-              className={contributorBarStyle.logo}
-              src={fb}
-              alt="facebook"
-              width={32}
-              height={32}
-            />
-            <Image
-              className={contributorBarStyle.logo}
-              src={ins}
-              alt="instagram"
-              width={32}
-              height={32}
-            />
-            <Image
-              className={contributorBarStyle.logo}
-              src={twitter}
-              alt="twitter"
-              width={32}
-              height={32}
-            />
+            <div className={contributorBarStyle.socials}>
+              {socials.map((social, key) => (
+                <span key={key}>{social}</span>
+              ))}
+            </div>
           </div>
         </div>
       </article>
