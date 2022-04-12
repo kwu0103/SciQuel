@@ -1,19 +1,18 @@
-import React, {useState} from 'react';
-import Link from 'next/Link'
-import styles from './header.module.css'
-import Image from 'next/image'
+import React, { useState } from "react";
+import Link from "next/Link";
+import styles from "./header.module.css";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = showMenu ? styles.list : styles.listClose;
   const toggleMenuNav = showMenu ? styles.navOpen : styles.nav;
-  
+
   return (
     <nav className={toggleMenuNav}>
-      <Link href="/"> 
+      <Link href="/">
         <h4>SciQuel</h4>
       </Link>
-      
+
       <div className={toggleMenu}>
         <Link href="/">
           <a>Latest</a>
@@ -35,7 +34,7 @@ export default function Header() {
       <form className={styles.search}>
         <input className={styles.input} placeholder="Search Sciquel" />
       </form>
-      
+
       <Link href="/">
         <a>Sign in</a>
       </Link>
@@ -46,5 +45,5 @@ export default function Header() {
         <div></div>
       </div>
     </nav>
-  )
+  );
 }
