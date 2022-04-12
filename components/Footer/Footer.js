@@ -1,6 +1,6 @@
 import Link from "next/Link";
 import styles from "./Footer.module.css";
-import Image from "next/image";
+import Image from "next/Image";
 
 export default function Footer() {
   const onSubscribe = (e) => {

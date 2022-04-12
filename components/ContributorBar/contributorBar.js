@@ -1,17 +1,8 @@
 import Head from "next/Head";
 import contributorBarStyle from "./contributorBar.module.css";
-import Tag from "../Tag/Tag";
-// import BiologyTag from "../Tag/BiologyTag";
-import Image from "next/image";
+import Image from "next/Image";
 
-function ContributorBar({
-  contributorName,
-  spans,
-  description,
-  tags,
-  image,
-  icons,
-}) {
+function ContributorBar({ contributorName, description, tags, image, icons }) {
   const { color } = tags;
   const { fb, ins, twitter } = icons;
 
@@ -33,9 +24,9 @@ function ContributorBar({
             <h1 className={contributorBarStyle.contributorName}>
               {contributorName}
             </h1>
-            <Tag color={color}> {spans[0]} </Tag>
-            &nbsp;&nbsp;&nbsp;
-            <Tag color={color}> {spans[1]} </Tag>
+            {tags.map((tag, key) => (
+              <span key={key}>{tag}</span>
+            ))}
             <br></br>
             <br></br>
             <p className={contributorBarStyle.param}>{description}</p>
