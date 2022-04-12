@@ -17,18 +17,7 @@ function Contributor() {
     instagram: ["/instagram@512px.png", "https://instagram.com"],
     twitter: ["/twitter@512px.png", "https://twitter.com"],
   };
-  const articleCard = (
-    <ArticleCard
-      headline="Lights. Camera. Action!"
-      subheadline="How the Hawaiian bobtail squid brings a creative vision to its..."
-      contributor="Edward Chen"
-      kind="ARTICLE"
-      tag={BiologyTag}
-      date="05/27/21"
-      imgSrc="/bobtail.png"
-      href="/posts/post"
-    />
-  );
+
   return (
     <ContributorLayout>
       <ContributorBar

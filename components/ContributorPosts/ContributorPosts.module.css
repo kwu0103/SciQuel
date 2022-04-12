@@ -1,3 +1,11 @@
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    float: right;
+    margin-top: 16px;
+}
+
 .numLink{
     color: #77423E;
     text-decoration: none;
@@ -15,12 +23,16 @@
     color: #77423E;
     text-decoration: none;
     font-size: 18px;
+    margin-right: 32px;
+    user-select: none;
 }
 
 .nextLink{
     color: #77423E;
     text-decoration: none;
     font-size: 18px;
+    margin-left: 32px;
+    user-select: none;
 }
 
 .numLink:focus {
@@ -33,4 +45,13 @@
 
 .numLink:focus::after{
     content: "]"
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardRow div div {
+    margin: 0;
 }
