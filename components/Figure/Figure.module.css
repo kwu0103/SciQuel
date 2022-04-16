@@ -1,7 +1,6 @@
 .figure {
     display: flex;
     align-items: center;
-
     width: 150%;
     max-width: 95vw;
     margin-left: 50%;
@@ -13,6 +12,8 @@
 .image {
     position: relative;
     width: 100%;
+    margin-top: 1%;
+
     padding-bottom: 40%;
 }
 
@@ -37,5 +38,5 @@
 }
 
 .caption {
-    margin-top: 12px;
+    margin-top: 3%;
 }

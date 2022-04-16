@@ -17,11 +17,11 @@ function Article(){
                 definition={definition} 
                 inContext={inContext}
             />
-            <ContributorBox 
+            {/* <ContributorBox 
                 image = {image} 
                 contributorName = {contributorName} 
                 desc = {desc} 
-            />
+            /> */}
         </>
     )
 }

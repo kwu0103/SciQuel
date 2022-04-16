@@ -5,6 +5,7 @@ import BiologyTag from "../components/Tag/BiologyTag";
 
 import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
+
 import Image from "next/image";
 
 import profilePic from '../public/bobtail.png'

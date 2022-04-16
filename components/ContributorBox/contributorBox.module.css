@@ -1,11 +1,16 @@
 .contributorBox {
-    margin: 0;
-    max-width: 40rem;
+    /* margin: 0; */
+/* margin-left: -10%; */
+    max-width: 60rem;
+    width: 50em;
     border-radius: 3%;
+    height: 200px;
+    margin-bottom: 5%;
 }
 
 .contributorImg {
-    margin-left: 50%;
+    margin-left: 41%;
+    margin-top: -14%;
     transform: translate(-50%, 35%);
     height: 10em;
     width: 10em;
@@ -13,7 +18,9 @@
 }
 
 .contributorText {
-    padding-left: 0;
+    /* padding-left: 0; */
+    margin-left: -12%;
+    margin-top: 1%;
 }
 
 .contributorHeader {
