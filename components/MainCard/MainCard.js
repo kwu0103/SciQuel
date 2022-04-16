@@ -52,9 +52,3 @@ function MainCard({
 }
 
 export default MainCard;
-{/*  >
-
-    
-
-</Link >
-</div > */}
