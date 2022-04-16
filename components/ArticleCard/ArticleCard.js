@@ -23,7 +23,7 @@ function ArticleCard({
         <Link href={href} passHref>
             {/* <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}> */}
             <div className={cardStyles.cardBackground + ' ' + utilStyles.grow}>
-                <Card >
+                <Card style={{ marginRight: '10px', marginLeft: '10px' }}>
                     <Card.Body>
                         {tag}
                         <small className={cardStyles.kind + ' ' + cardStyles.bodyFont}>{kind}</small>
@@ -32,10 +32,12 @@ function ArticleCard({
                             <Card.Text className={cardStyles.body + ' ' + cardStyles.bodyFont}>
                                 {subheadline}
                             </Card.Text>
-                            <Card.Text>
-                                <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
-                                <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
-                            </Card.Text>
+                            <div style={{ marginTop: "2.25em" }}>
+                                <Card.Text >
+                                    <small className={cardStyles.small + ' ' + cardStyles.bodyFont}>By {contributor}</small>
+                                    <small className={cardStyles.dateOnCard + ' ' + cardStyles.bodyFont}>{date}</small>
+                                </Card.Text>
+                            </div>
                         </div>
                     </Card.Body>
 

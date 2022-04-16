@@ -30,27 +30,31 @@ function MainCard({
 
 
     return (
-        <div className={styles.MainCard} >
+        <div className={styles.MainCard}>
+            <div className={styles.ImageContainer}>
+                <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
+            </div>
             <Link href={href} passHref={true}>
-                <div class="mt-4">
+                <div >
                     <div className={styles.HeadlineBox + ' ' + utilStyles.grow} ref={HeadlineBox} >
                         {tag}
                         <div className={styles.HeadlineText}>{headline}</div>
                         <div className={styles.SubheadlineText}>{subheadline}</div>
 
                     </div>
-                    <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    <div>
+                        <p className={styles.ContributorText} ref={ContributorText}>{contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}</p>
+                    </div>
                 </div>
-
             </Link>
-
-            <div className={styles.ImageContainer}>
-
-                <Image className={styles.Image} src={imgSrc} alt={imgSrc} width="700px" height="375px" objectFit="cover" objectPosition="20%" />
-            </div>
-
         </div>
     );
 }
 
 export default MainCard;
+{/*  >
+
+    
+
+</Link >
+</div > */}
