@@ -3,6 +3,8 @@ import MainCard from "../components/MainCard/MainCard";
 import ArticleCard from "../components/ArticleCard/ArticleCard";
 import BiologyTag from "../components/Tag/BiologyTag";
 
+
+
 import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
 import Image from "next/image";

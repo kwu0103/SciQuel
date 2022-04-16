@@ -6,6 +6,8 @@ import ContributorBox from "../../components/ContributorBox/contributorBox";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import Comments from "../../components/Comment/Comment";
+import React from 'react';
 
 function Post() {
   return (
@@ -251,6 +253,7 @@ function Post() {
           image="/SciQuel_1.png"
         />
       </div>
+      <Comments/>
       <Footer />
     </>
   );
