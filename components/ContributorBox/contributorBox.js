@@ -18,7 +18,10 @@ function ContributorBox({ contributorName, desc, image }) {
               <Card.Text className={styles.contributorHeader}>
                 {/* <h1> {contributorName} </h1> */}
               </Card.Text>
-              <Card.Text className={styles.contributorBody}><b style={{ fontWeight: "800" }}>{contributorName}</b>{desc}</Card.Text>
+              <Card.Text className={styles.contributorBody}>
+                <b style={{ fontWeight: "800" }}>{contributorName}</b>
+                {desc}
+              </Card.Text>
             </Card.Body>
           </Col>
         </Row>

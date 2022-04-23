@@ -1,0 +1,94 @@
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 16px;
+    width: 1068px;
+}
+
+.numLink{
+    color: #77423E;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    display: block;
+    width: 64px;
+    height: 48px;
+}
+
+.breakLink{
+    color: #77423E;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    display: block;
+    width: 64px;
+    height: 48px;
+    padding-top: 10px;
+}
+
+.prevLink{
+    color: #77423E;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    margin-right: 60px;
+    user-select: none;
+    display: block;
+    width: 96px;
+    height: 48px;
+}
+
+.nextLink{
+    color: #77423E;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    margin-left: 60px;
+    user-select: none;
+    display: block;
+    width: 96px;
+    height: 48px;
+}
+
+.numLink:focus {
+    text-decoration: dashed;
+}
+
+.numLink:focus:before{
+    content: "["
+}
+
+.numLink:focus::after{
+    content: "]"
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardRow div div {
+    margin: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.pageItem {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.breakClass {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prevClass{
+    margin-left: auto;
+}
+.nextClass{
+    margin-right: auto;
+}
