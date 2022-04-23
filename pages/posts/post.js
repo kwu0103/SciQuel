@@ -119,10 +119,10 @@ function Post() {
             livelihood of another animal we call the Hawaiian bobtail squid.
             Squid, meet <i>V. fischeri</i>. Bacterium, meet our reader.{" "}
             <i>Hi!</i>
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
-          <h4>
+          <h4 style={{marginTop:"30px"}}>
             What <i>is</i> the Hawaiian bobtail squid?
           </h4>
           <p>
@@ -137,10 +137,10 @@ function Post() {
             bioluminescence, the squid provides nutrients such as sugars and
             amino acids for the bacteria, as well as a home within its light
             organ.
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
-          <h4>But why trade food for light?</h4>
+          <h4 style={{marginTop:"30px"}}>But why trade food for light?</h4>
           <p>
             Imagine looking towards the sky. (Better yet, actually do it!) You
             will see sunlight or, if it is nighttime, moonlight and starlight.
@@ -164,10 +164,11 @@ function Post() {
             termed reflectins, work to direct light from the bacteria downwards.
             This method of camouflage is the principle of counter-illumination:
             Absorb on the top, shine on the bottom.
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
-          <Figure imgSrc="/fig1.jpg" imgAlt="Figure 1" captionPosition="below">
+  
+          <Figure imgSrc="/fig1.jpg" imgAlt="Figure 1" captionPosition="below" >
             <b>Figure 1: The principle of counter-illumination.</b> The squid
             matches the darker seafloor along its top surface and the brighter
             moonlit background along its bottom surface. This helps it blend in
@@ -183,15 +184,15 @@ function Post() {
               ♫]
             </i>
           </Figure>
-          <p>
+          <p >
             Unrelated to the bacteria, the squid can also camouflage by using
             its chromatophores, pigmented cells that can be contracted or
             expanded to modify its color, and by carrying a covering of sand on
             top of itself, which adheres to its mucus secretions.
-            <br />
-            <br />
+            {/* <br /> */}
+            {/* <br/> */}
           </p>
-          <h4>
+          <h4 style={{marginTop:"30px"}}> 
             Is there more to counter-illumination than screwing in a lightbulb?
           </h4>
           <p>
@@ -240,10 +241,10 @@ function Post() {
             works! These two small life forms, tiny think-meat and all, come
             together to outwit much larger predators. Who ever said bigger
             brains are smarter?
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
-          <h4>You said something about homelessness?</h4>
+          <h4 style={{marginTop:"30px"}}>You said something about homelessness?</h4>
           <p>
             Even after finding a Hawaiian bobtail squid and making its way into
             the light organ, which already is difficult, the bacteria do not
@@ -268,10 +269,10 @@ function Post() {
             themselves wandering the seas again, waking up in the morning as
             strangers to the harsh world – in need of a job; in search of a
             home.
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
-          <h4>
+          <h4 style={{marginTop:"30px"}}>
             How can studying the squid and <i>Vibrio fischeri</i> inform
             humankind?
           </h4>
@@ -287,8 +288,8 @@ function Post() {
             the traditional sense: radar, which cannot be fooled by bright
             lights. Luckily for the squid, it seems this is not a feature it
             needs to outsmart.
-            <br />
-            <br />
+            {/* <br />
+            <br /> */}
           </p>
           <Figure imgSrc="/fig2.png" imgAlt="figure 2" captionPosition="below">
             <b>
@@ -324,7 +325,8 @@ function Post() {
           Cover Image: “Hawaiian Bobtail Squid” is licensed under CC BY-NC 4.0.
         </Acknowledgement>
       </Article>
-      <div style={{ marginLeft: "48%", marginTop: "10%", marginBottom: "5%",transform: "translateX(-50%)" }}>
+      <div style={{ marginLeft: "44%", marginTop: "-2%", marginBottom: "5%",transform: "translateX(-50%)" }}>
+      {/* <hr className={styles.hr} /> */}
         <ContributorBox
           contributorName="Edward Chen"
           desc=" is a first-year Immunology MMSc student at Harvard Medical School. Though he used to think of himself as a seal person, writing this article has leaned him towards squid people."
@@ -336,6 +338,8 @@ function Post() {
           image="/SciQuel_1.png"
         />
       </div>
+      <hr className={styles.hr} style={{ marginLeft: "26%", marginRight: "26%", marginTop: "-9%", marginBottom: "5%" }}/>
+
       <Footer />
       </div>
       {/* <div ref = {text} className = {styles.clickBox}>

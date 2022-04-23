@@ -51,7 +51,7 @@ function Article({
         <div className={utilStyles.centerarticle}>
           <b>Article</b> | <b>Essay</b> | {tag}
           <br /> <br />
-          <h5>{contributorSection}</h5>
+          <p style={{fontSize:"19.5px"}}>{contributorSection}</p>
           {/* <h5> */}
           <b>
             <Date dateString={date} /> | {length}

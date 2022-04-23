@@ -36,6 +36,7 @@
 margin-left: 100px;
     max-width: 55%;
     transform: translateY(-50px);
+	margin-top: 14%;
 }
 
 .centersubtitle {
@@ -61,7 +62,6 @@ margin-left: 100px;
 
     /* width: auto;
     height: 100vh; */
-
     width: auto;
     height: calc(100vh - 50px); /* entire screen minus navbar */
 
