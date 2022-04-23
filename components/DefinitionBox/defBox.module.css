@@ -2,12 +2,14 @@
     position: fixed;
     right: 0;
     top:0;
-    width: 330px;
+    width: 25%;
+    min-width: 256px;
     height: 100%;
     background: white;
-  
-    padding: 15px;
-    font-size: 15px;
+    overflow-y: scroll;
+    padding: 24px;
+    padding-top: 48px;
+    font-size: 16px;
     box-shadow: 0 0px 30px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     animation: slide1 1s forwards;
@@ -23,7 +25,8 @@
   display: inline;
 }
 .title {
-    color: gray;
+    color: #4A8257;
+    font-size: x-large;
 }
 
 .defText{
@@ -41,8 +44,8 @@
   height: 100%;
   /* background: gainsboro; */
 
-  padding: 15px;
-  font-size: 15px;
+  padding: 16px;
+  font-size: 16px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -60,8 +63,8 @@
 
 
   position: fixed;
-  top:3%;
-  right: 2%;
+  top: 24px;
+  right: 24px;
 
   animation: slide2 1s forwards;
 

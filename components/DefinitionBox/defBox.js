@@ -1,32 +1,26 @@
- import {Card} from 'react-bootstrap';
- import defStyles from "./defBox.module.css";
- import { useEffect, useRef } from "react";
+import defStyles from "./defBox.module.css";
 
-
- function DefBox( {
-     term,
-     definition,
-     inContext}){
-
-
-return(
+function DefBox({ term, definition, inContext }) {
+  return (
     <div className={defStyles.defBox}>
-        <p className={defStyles.title}>Term</p>
+      <p className={defStyles.title}>Term</p>
+      <p>
         <strong>{term}</strong>
-        <hr style = {{width: '17em'}}/>
-                <p className={defStyles.title}>Definition</p>
-                {/* <button>hi</button> */}
-                {/* <button ref = {cancelBtn} className = {defStyles.cancel} 
+      </p>
+      <hr style={{ width: "100%", marginTop: "25px" }} />
+      <p className={defStyles.title}>Definition</p>
+      {/* <button>hi</button> */}
+      {/* <button ref = {cancelBtn} className = {defStyles.cancel} 
                 ></button> */}
 
-
-             {definition}
-              <hr style = {{width: '17em'}}/>
-                <p className={defStyles.title}>In Context</p>
-               {inContext}
-
+      <p>{definition}</p>
+      <hr style={{ width: "100%", marginTop: "50px" }} />
+      <p className={defStyles.title}>In Context</p>
+      <p>
+        <i>&quot;{inContext}&quot;</i>
+      </p>
     </div>
-)
- }
+  );
+}
 
- export default DefBox;
+export default DefBox;
