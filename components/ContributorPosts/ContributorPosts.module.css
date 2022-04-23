@@ -2,8 +2,8 @@
     display: flex;
     padding-left: 0;
     list-style: none;
-    float: right;
     margin-top: 16px;
+    width: 1068px;
 }
 
 .numLink{
@@ -11,28 +11,44 @@
     text-decoration: none;
     padding: 10px 20px 10px 20px;
     font-size: 18px;
+    display: block;
+    width: 64px;
+    height: 48px;
 }
 
 .breakLink{
     color: #77423E;
     text-decoration: none;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;
+    display: block;
+    width: 64px;
+    height: 48px;
+    padding-top: 10px;
 }
 
 .prevLink{
     color: #77423E;
     text-decoration: none;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;
-    margin-right: 32px;
+    margin-right: 60px;
     user-select: none;
+    display: block;
+    width: 96px;
+    height: 48px;
 }
 
 .nextLink{
     color: #77423E;
     text-decoration: none;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;
-    margin-left: 32px;
+    margin-left: 60px;
     user-select: none;
+    display: block;
+    width: 96px;
+    height: 48px;
 }
 
 .numLink:focus {
@@ -54,4 +70,25 @@
 
 .cardRow div div {
     margin: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.pageItem {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.breakClass {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prevClass{
+    margin-left: auto;
+}
+.nextClass{
+    margin-right: auto;
 }

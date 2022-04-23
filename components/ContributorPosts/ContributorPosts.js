@@ -10,6 +10,7 @@ import styles from "./ContributorPosts.module.css";
 const NUM_POSTS = 176;
 
 function Posts({ currentPosts, loading }) {
+  // TODO: better loading indicator
   if (loading) {
     return <h2>Loading...</h2>;
   }
@@ -47,7 +48,7 @@ function Posts({ currentPosts, loading }) {
   );
 }
 
-/** replace this with actual backend fetch */
+/** TODO: replace this with actual backend fetch */
 async function fetchPosts() {
   const articleCard = (
     <ArticleCard
@@ -73,8 +74,10 @@ export default function ContributorPosts({ postsPerPage }) {
   const [loading, setLoading] = useState(true);
   const [currentPosts, setCurrentPosts] = useState(null);
   const [pageCount, setPageCount] = useState(0);
-  const [postOffset, setPostOffset] = useState(0);
   const [currentPage, setCurrentPage] = useState(1); // only used to keep track
+  const [hidePrevLink, setHidePrevLink] = useState(true);
+  const [hideNextLink, setHideNextLink] = useState(false);
+  const [pageRange, setPageRange] = useState(3);
 
   // initial loading of all posts
   useEffect(() => {
@@ -83,48 +86,87 @@ export default function ContributorPosts({ postsPerPage }) {
       .then(() => setLoading(false));
   }, []);
 
+  // keep page count up to date
   useEffect(() => {
-    const updateCurrentPosts = () => {
-      const endOffset = postOffset + postsPerPage;
-      console.log(`Loading items from ${postOffset} to ${endOffset}`);
-      setCurrentPosts(posts.slice(postOffset, endOffset));
-      setPageCount(Math.ceil(posts.length / postsPerPage));
-    };
-    updateCurrentPosts();
-  }, [posts, postOffset, postsPerPage]);
+    setPageCount(Math.ceil(posts.length / postsPerPage));
+  }, [posts, postsPerPage]);
 
+  // update current posts based on current page
+  useEffect(() => {
+    const postOffset = (currentPage - 1) * postsPerPage;
+    setCurrentPosts(posts.slice(postOffset, postOffset + postsPerPage));
+  }, [currentPage, posts, postsPerPage]);
+
+  useEffect(() => {
+    // conditionally hide prev/next buttons when redundant
+    if (currentPage === 1) setHidePrevLink(true);
+    else setHidePrevLink(false);
+    if (currentPage === pageCount) setHideNextLink(true);
+    else setHideNextLink(false);
+  }, [currentPage, pageCount]);
+
+  // conditionally change pageRange for uniform link count
+  useEffect(() => {
+    switch (currentPage) {
+      case 1:
+      case pageCount:
+        setPageRange(6);
+        break;
+      case 2:
+      case 3:
+        setPageRange(5);
+        break;
+      case pageCount - 1:
+      case pageCount - 2:
+        setPageRange(6);
+        break;
+      case 4:
+      case pageCount - 3:
+        setPageRange(4);
+        break;
+      default:
+        setPageRange(3);
+        break;
+    }
+  }, [currentPage, pageCount]);
+
+  // keep track of current page
   const handlePageClick = (event) => {
     setCurrentPage(event.selected + 1);
-    const newOffset = (event.selected * postsPerPage) % posts.length;
-    setPostOffset(newOffset);
   };
+
+  const Pagination = (
+    <ReactPaginate
+      breakLabel="..."
+      breakClassName={styles.breakClass}
+      nextLabel="Next >"
+      nextClassName={styles.nextClass}
+      previousLabel="< Prev."
+      previousClassName={styles.prevClass}
+      pageLabelBuilder={(page) => {
+        if (page === currentPage) return "[" + page + "]";
+        return page;
+      }}
+      pageRangeDisplayed={pageRange}
+      marginPagesDisplayed={2}
+      onPageChange={handlePageClick}
+      pageCount={pageCount}
+      renderOnZeroPageCount={null}
+      pageClassName={styles.pageItem}
+      pageLinkClassName={styles.numLink}
+      previousLinkClassName={
+        styles.prevLink + " " + (hidePrevLink && styles.hide)
+      }
+      nextLinkClassName={styles.nextLink + " " + (hideNextLink && styles.hide)}
+      breakLinkClassName={styles.breakLink}
+      containerClassName={styles.pagination}
+    />
+  );
 
   return (
     <>
       <Posts currentPosts={currentPosts} loading={loading} />
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel="Next >"
-        previousLabel="< Prev."
-        pageLabelBuilder={(page) => {
-          if (page === currentPage) return "[" + page + "]";
-          return page;
-        }}
-        pageRangeDisplayed={1}
-        marginPagesDisplayed={1}
-        onPageChange={handlePageClick}
-        pageCount={pageCount}
-        renderOnZeroPageCount={null}
-        pageClassName="page-item"
-        pageLinkClassName={styles.numLink}
-        previousClassName="page-item"
-        previousLinkClassName={styles.prevLink}
-        nextClassName="page-item"
-        nextLinkClassName={styles.nextLink}
-        breakClassName="page-item"
-        breakLinkClassName={styles.breakLink}
-        containerClassName={styles.pagination}
-      />
+      {pageCount > 1 && Pagination}
     </>
   );
 }
