@@ -36,12 +36,12 @@ export default function index() {
 
   return (
     <HomepageLayout>
-      <h1 style={{ marginLeft: '2rem', padding: '2rem' }}>Read what&apos;s new</h1>
+      <div style={{ fontSize: '40px', marginLeft: '2rem', padding: '2rem' }}>Read what&apos;s new</div>
       <div>
 
         <div class="d-flex justify-content-center">
 
-          <div style={{ width: '1700px', paddingLeft: '2rem', minHeight: '390px', paddingRight: '2rem', paddingBottom: '2rem' }}>
+          <div style={{ width: '1700px', minHeight: '390px', paddingLeft: '0rem', paddingRight: '2rem', paddingBottom: '2rem' }}>
             {mainCard}
           </div>
         </div>
