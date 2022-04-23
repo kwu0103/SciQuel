@@ -1,23 +1,26 @@
 .contributorBox {
-    margin: 0;
-    max-width: 40rem;
+    /* margin: 0; */
+/* margin-left: -10%; */
+    max-width: 60rem;
+    width: 50em;
     border-radius: 3%;
-    max-height: 30rem;
+    height: 200px;
+    margin-bottom: 5%;
 }
 
 .contributorImg {
-    display: block;
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 41%;
+    margin-top: -14%;
+    transform: translate(-50%, 35%);
     height: 10em;
     width: 10em;
     border-radius: 50%;
 }
 
 .contributorText {
-    margin-top: 2em;
-    font-size: large;
+    /* padding-left: 0; */
+    margin-left: -12%;
+    margin-top: 1%;
 }
 
 .contributorHeader {
