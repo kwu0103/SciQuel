@@ -7,7 +7,7 @@ import BiologyTag from "../Tag/BiologyTag";
 import styles from "./ContributorPosts.module.css";
 
 /** number of fake posts to generate for sample post list */
-const NUM_POSTS = 176;
+const NUM_POSTS = 189;
 
 function Posts({ currentPosts, loading }) {
   // TODO: better loading indicator
@@ -77,7 +77,7 @@ export default function ContributorPosts({ postsPerPage }) {
   const [currentPage, setCurrentPage] = useState(1); // only used to keep track
   const [hidePrevLink, setHidePrevLink] = useState(true);
   const [hideNextLink, setHideNextLink] = useState(false);
-  const [pageRange, setPageRange] = useState(3);
+  const [pageRange, setPageRange] = useState(5);
 
   // initial loading of all posts
   useEffect(() => {
@@ -110,22 +110,22 @@ export default function ContributorPosts({ postsPerPage }) {
     switch (currentPage) {
       case 1:
       case pageCount:
-        setPageRange(6);
+        setPageRange(7);
         break;
       case 2:
       case 3:
-        setPageRange(5);
+        setPageRange(6);
         break;
       case pageCount - 1:
       case pageCount - 2:
-        setPageRange(6);
+        setPageRange(7);
         break;
       case 4:
       case pageCount - 3:
-        setPageRange(4);
+        setPageRange(6);
         break;
       default:
-        setPageRange(3);
+        setPageRange(5);
         break;
     }
   }, [currentPage, pageCount]);
@@ -148,7 +148,7 @@ export default function ContributorPosts({ postsPerPage }) {
         return page;
       }}
       pageRangeDisplayed={pageRange}
-      marginPagesDisplayed={2}
+      marginPagesDisplayed={1}
       onPageChange={handlePageClick}
       pageCount={pageCount}
       renderOnZeroPageCount={null}
