@@ -36,7 +36,7 @@ export default function index() {
 
   return (
     <HomepageLayout>
-      <h1>Read what&apos;s new</h1>
+      <h1 style={{ marginLeft: '2rem', padding: '2rem' }}>Read what&apos;s new</h1>
       <div>
 
         <div class="d-flex justify-content-center">
