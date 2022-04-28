@@ -79,7 +79,7 @@
 
 @media (max-width: 53rem) {
 	.MainCard{
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 	}
 	.HeadlineBoxAndContributorText {
