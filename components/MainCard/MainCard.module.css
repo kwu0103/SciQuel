@@ -62,7 +62,7 @@
 }
 
 .PseudoGrowHover {
-	transform: scale(1.1) translateY(10px);
+	transform: scale(1.05) translate(-5px, 10px);
 }
 
 .VerticalCenter {

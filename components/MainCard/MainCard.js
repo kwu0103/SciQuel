@@ -1,6 +1,6 @@
 import Image from "next/Image";
 import Link from "next/Link";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css"; // change hover effect here
@@ -28,8 +28,6 @@ function MainCard({
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
 
-  const [width, setWidth] = useState(0);
-
   useLayoutEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
     if (HeadlineBox.current && ContributorText.current) {
@@ -45,8 +43,7 @@ function MainCard({
         const height =
           Wrapper.current.offsetHeight / 2 +
           HeadlineBox.current.offsetHeight / 2;
-        setWidth(Wrapper.current.offsetWidth);
-        ContributorText.current.style.top = height + "px";
+        ContributorText.current.style.top = height + "px"; // override this for media queries
       }
     }
   }, []);
