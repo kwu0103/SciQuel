@@ -5,7 +5,7 @@ import BiologyTag from "../components/Tag/BiologyTag";
 
 import styles from "../components/HomepageLayout/HomepageLayout.module.css";
 
-import Image from "next/image";
+import Image from "next/Image";
 
 import profilePic from "../public/bobtail.png";
 import { left } from "@popperjs/core";

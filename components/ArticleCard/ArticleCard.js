@@ -5,7 +5,7 @@ import Tag from "../Tag/Tag";
 
 import cardStyles from "./ArticleCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
-import Image from "next/image";
+import Image from "next/Image";
 
 function ArticleCard({
   headline,
