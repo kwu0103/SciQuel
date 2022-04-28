@@ -1,58 +1,58 @@
 .contributorBox {
-    /* margin: 0; */
-/* margin-left: -10%; */
-    max-width: 60rem;
-    width: 50em;
-    border-radius: 3%;
-    height: 200px;
-    margin-bottom: 5%;
+  /* margin: 0; */
+  /* margin-left: -10%; */
+  max-width: 60rem;
+  width: 50em;
+  border-radius: 3%;
+  height: 200px;
+  margin-bottom: 5%;
 }
 
 .contributorImg {
-    margin-left: 41%;
-    margin-top: -14%;
-    transform: translate(-50%, 35%);
-    height: 10em;
-    width: 10em;
-    border-radius: 50%;
+  margin-left: 41%;
+  margin-top: -14%;
+  transform: translate(-50%, 35%);
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
 }
 
 .contributorText {
-    /* padding-left: 0; */
-    margin-left: -12%;
-    margin-top: 1%;
+  /* padding-left: 0; */
+  margin-left: -12%;
+  margin-top: 1%;
 }
 
 .contributorHeader {
-    color: teal;
+  color: teal;
 }
 
 @media only screen and (max-width: 800px) {
-    .contributorImg {
-        margin-top: 5rem;
-        margin-left: auto;
-        margin-right: auto; 
-        justify-content: center;
-    }
+  .contributorImg {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
 
-    .contributorText {
-        margin-top: 2.5rem;
-        font-size: medium;
-    }
+  .contributorText {
+    margin-top: 2.5rem;
+    font-size: medium;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .contributorImg {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        height: 8em;
-        width: 8em;
-        justify-content: center;
-    }
+  .contributorImg {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+    width: 8em;
+    justify-content: center;
+  }
 
-    .contributorText {
-        margin-top: 0.025rem;
-        font-size: medium;
-    }
+  .contributorText {
+    margin-top: 0.025rem;
+    font-size: medium;
+  }
 }

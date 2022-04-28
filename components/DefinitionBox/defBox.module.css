@@ -1,75 +1,81 @@
 .defBox {
-    position: fixed;
-    right: 0;
-    top:0;
-    width: 25%;
-    min-width: 256px;
-    height: 100%;
-    background: white;
-    overflow-y: scroll;
-    padding: 24px;
-    padding-top: 48px;
-    font-size: 16px;
-    box-shadow: 0 0px 30px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25%;
+  min-width: 256px;
+  height: 100%;
+  background: white;
+  overflow-y: scroll;
+  padding: 24px;
+  padding-top: 48px;
+  font-size: 16px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-    animation: slide1 1s forwards;
-  }
-  @keyframes slide1 {
-    0% { transform: translateX(150%); }
-    100% { transform: translateX(0%); }
+  animation: slide1 1s forwards;
 }
-.hide{
+@keyframes slide1 {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.hide {
   display: none;
 }
-.show{
+.show {
   display: inline;
 }
 .title {
-    color: #4A8257;
-    font-size: x-large;
+  color: #4a8257;
+  font-size: x-large;
 }
 
-.defText{
+.defText {
   border: none;
   font-size: 16px;
   background-color: rgb(110, 34, 34);
   color: white;
   display: inline;
 }
-.side{
+.side {
   position: fixed;
   right: 0;
-  top:0;
+  top: 0;
   width: 300px;
   height: 100%;
   /* background: gainsboro; */
 
   padding: 16px;
   font-size: 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.cardText{
+.cardText {
   margin-top: 0%;
 
   vertical-align: middle;
 }
-.cancel{
-  background-image: url('/x.png');
+.cancel {
+  background-image: url("/x.png");
   background-size: 16px;
-  color:transparent;
+  color: transparent;
   width: 16px;
   height: 16px;
-
 
   position: fixed;
   top: 24px;
   right: 24px;
 
   animation: slide2 1s forwards;
-
 }
 @keyframes slide2 {
-  0% { transform: translateX(400%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

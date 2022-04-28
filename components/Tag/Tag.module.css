@@ -1,18 +1,18 @@
 .tag {
-    display: inline-block;
+  display: inline-block;
 
-    color: white;
+  color: white;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    width: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-family: 'Source Serif Pro';
-    font-size: 12px;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Source Serif Pro";
+  font-size: 12px;
 
-    margin-left: 2px;
-    margin-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
