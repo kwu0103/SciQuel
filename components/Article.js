@@ -1,7 +1,6 @@
 import Head from "next/Head";
 import { createElement } from "react";
 
-import Date from "./Date";
 import Tag from "./Tag/Tag";
 
 import utilStyles from "../styles/utils.module.css";
@@ -54,9 +53,9 @@ function Article({
           <h5>{contributorSection}</h5>
           {/* <h5> */}
           <b>
-            <Date dateString={date} /> | {length}
-            </b>
-            <br/>
+            {date} | {length}
+          </b>
+          <br />
           {/* </h5> */}
           <br />
           {children}
