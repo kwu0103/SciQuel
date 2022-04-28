@@ -26,6 +26,7 @@
 
  .HeadlineBox {
 	min-width: 512px;
+	max-width: 512px;
 	max-height: 240px;
 
 	position: relative;
@@ -76,7 +77,7 @@
 	width:700px
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 53rem) {
 	.MainCard{
 		flex-direction: column;
 		align-items: center;
@@ -85,6 +86,7 @@
 		margin-right: 0;
 	}
 	.HeadlineBox {
+		min-width: 700px;
 		background-image: none;
 		color: black;
 		position: relative;
