@@ -27,7 +27,7 @@ function Article({
   const contributorArray = [];
   for (const [key, val] of Object.entries(contributors))
     contributorArray.push(
-      <span>
+      <span key={key}>
         {key} by {val}
         <br />
       </span>
