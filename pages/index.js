@@ -40,15 +40,15 @@ export default function index() {
       <div style={{ fontSize: '40px', marginLeft: '2rem', padding: '2rem' }}>Read what&apos;s new</div>
       <div>
 
-        <div class="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
 
           <div style={{ width: '1700px', minHeight: '390px', paddingLeft: '0rem', paddingRight: '2rem', paddingBottom: '2rem' }}>
             {mainCard}
           </div>
         </div>
 
-        <div class="d-flex justify-content-center">
-          <div class="row row-cols-md-1  row-cols-md-2 row-cols-lg-3" style={{ width: '1790px', paddingLeft: '1rem', paddingRight: '1rem' }}>
+        <div className="d-flex justify-content-center">
+          <div className="row row-cols-md-1  row-cols-md-2 row-cols-lg-3" style={{ width: '1790px', paddingLeft: '1rem', paddingRight: '1rem' }}>
             <div style={{ padding: "0px" }}>{articleCard}</div>
             <div style={{ padding: "0px" }}>{articleCard}</div>
             <div style={{ padding: "0px" }}>{articleCard}</div>
