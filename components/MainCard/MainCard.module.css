@@ -1,35 +1,47 @@
+.wrapper {
+	width: 100%;
+}
+
 .MainCard {
 	display: flex;
-	flex-direction: row;
+
+	width: fit-content;
+	height: fit-content;
+
 	position: relative;
-	/* justify-content: center; */
+	
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+.HeadlineBoxAndContributorText {
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+
+	margin-right: -200px;
+
+	z-index: 1;
 }
 
  .HeadlineBox {
-	position: absolute;
-	left: 20%;
-	margin-top: 3rem;
-	margin-left: -140px;
+	min-width: 512px;
+	max-height: 240px;
 
-	width: 507px;
-	height: 240px;
+	position: relative;
+
+	padding-left: 32px;
+	padding-right: 64px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	border-radius: 5px;
 	background-image: linear-gradient(#1a6f8c, #63a59d);
 	color: white;
-	padding-left: 25px;
-	padding-top: 26px;
-	padding-right: 60px;
 
 	cursor: pointer;
 }
-.box {
-font-size: 16px;
-}
-.box.text-length-4,
-.box.text-length-5,
-.box.text-length-6 {
-font-size: 12px;
-}
+
 .HeadlineText {
 	margin-top: 2px;
 	font-family: 'Alegreya Sans SC';
@@ -42,83 +54,50 @@ font-size: 12px;
 	font-size: 20px;
 }
 
-.ContributorText {
-	position: absolute;
-	left: 20%;
-	width: 310px;
-	
+.ContributorText {	
 	color: grey;
 	font-size: 1vw;
-	margin-top: 15rem;
-	margin-left: -140px;
 	transition: all 0.2s ease-in-out;
+	position: absolute;
 }
 
 .PseudoGrowHover {
 	transform: scale(1.1) translateY(10px);
 }
 
+.VerticalCenter {
+	position: relative;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
 .ImageContainer {
-	position: absolute;
-	right: 20%;
 	flex-shrink: 0;
 	width:700px
 }
 
-@media (max-width: 78rem) {
-	.MainCard{
-		position: relative;
-
-
-	}
-	.ImageContainer{
-		left: 32%;
-		position:absolute;
-		
-
-	}
-	.HeadlineBox {
-		position:absolute;
-		margin-left: 20%;
-		left: -15%;
-	}
-	.ContributorText {
-		margin-left: -15%;
-		
-		position: absolute;
-	}
-}
-
-@media (max-width: 56rem) {
+@media (max-width: 1024px) {
 	.MainCard{
 		flex-direction: column;
-		position: relative;
-		
-		justify-content: center;
 		align-items: center;
 	}
-	.ImageContainer{
-		right: 0;
-		left: 0;
-		position: relative;
-
+	.HeadlineBoxAndContributorText {
+		margin-right: 0;
 	}
 	.HeadlineBox {
 		background-image: none;
 		color: black;
-		width:700px;
-		left: 20%;
-		margin-right: 7rem;
 		position: relative;
 		border: 1px solid rgba(0, 0, 0, 0.125);
 		border-radius: 0;
-		margin-top: -8px;
-		margin-left: -140px;
 	}
 	.ContributorText {
-		left: 20%;
+		position: static;
+		margin-left: 32px;
+		top: 0;
+	}
+	.VerticalCenter{
 		margin-top: 0;
-		position: relative;
+		transform: none;
 	}
 }
-
