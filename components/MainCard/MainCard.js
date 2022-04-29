@@ -28,6 +28,7 @@ function MainCard({
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
 
+
   useLayoutEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
     if (HeadlineBox.current && ContributorText.current) {
