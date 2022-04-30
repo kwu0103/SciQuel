@@ -50,10 +50,7 @@ export default function index() {
       <div style={{ fontSize: "40px", marginLeft: "2rem", padding: "2rem" }}>
         Read what&apos;s new
       </div>
-      <div class="d-flex row justify-content-center"
-
-      >
-
+      <div className="d-flex row justify-content-center">
         <div
           style={{
             paddingLeft: "2rem",
@@ -66,7 +63,7 @@ export default function index() {
         <div
           className="d-flex justify-content-center row row-cols-md-1  row-cols-md-2 row-cols-lg-3"
           style={{
-            width: '1790px',
+            width: "1790px",
             paddingLeft: "1rem",
             paddingRight: "1rem",
           }}

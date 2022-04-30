@@ -24,11 +24,9 @@ function MainCard({
   imgSrc,
   href,
 }) {
-
   const ContributorText = useRef();
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
-
 
   useLayoutEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
@@ -41,7 +39,9 @@ function MainCard({
       };
       const matches = document.querySelectorAll("fit");
 
+      console.log("pog");
       document.querySelectorAll("fit").forEach((el) => {
+        console.log(el);
         el.style.setProperty("--length", el.innerText.length);
       });
 
