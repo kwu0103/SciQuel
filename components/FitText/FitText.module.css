@@ -1,0 +1,8 @@
+.fitText {
+
+  font-size: calc(var(--width) / (var(--length, 1) * 0.5) * var(--scale, 1));
+
+  font-weight: 600;
+  line-height: 1;
+  margin: 1rem 0;
+}
