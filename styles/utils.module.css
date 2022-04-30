@@ -1,79 +1,77 @@
 .heading2Xl {
-
-	font-size: 3.5rem;
-	line-height: 1.2;
-	font-weight: 800;
-	letter-spacing: -0.05rem;
-	font-family: 'Alegreya Sans SC';
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  font-family: "Alegreya Sans SC";
 }
 
 .headingXl {
-	font-size: 2rem;
-	line-height: 1.3;
-	font-weight: 800;
-	letter-spacing: -0.05rem;
-	font-family: 'Quicksand';
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  font-family: "Quicksand";
 }
 
 .span {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	align-items: center;
-	justify-content: center;
-	width: fit-content;
-	height: inherit;
-	background-color: #f58559;
-	border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: inherit;
+  background-color: #f58559;
+  border-radius: 15px;
 }
 
 .centertitle {
-	margin-left: 100px;
-    max-width: 55%;
+  margin-left: 100px;
+  max-width: 55%;
 
-	position: absolute;
-	bottom: 128px;
+  position: absolute;
+  bottom: 128px;
 }
 
 .centersubtitle {
-    margin-left: 100px;
-    max-width: 40%;
-	position: absolute;
-	bottom: 0;
-} 
+  margin-left: 100px;
+  max-width: 40%;
+  position: absolute;
+  bottom: 0;
+}
 
-.centerarticle{
-    max-width: 45rem;
-    padding: 0 1rem;
-    margin: 3rem auto 2rem;
+.centerarticle {
+  max-width: 45rem;
+  padding: 0 1rem;
+  margin: 3rem auto 2rem;
 }
 
 .background {
-    overflow: hidden;
-    background-image: url('/bobtail.png');
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
-    padding: 200px 0 0;  
-    /* min-width: 100%; */
+  overflow: hidden;
+  background-image: url("/bobtail.png");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  padding: 200px 0 0;
+  /* min-width: 100%; */
 
-    /* width: auto;
+  /* width: auto;
     height: 100vh; */
 
-    width: auto;
-    height: calc(100vh - 50px); /* entire screen minus navbar */
+  width: auto;
+  height: calc(100vh - 50px); /* entire screen minus navbar */
 
-    /* position: fixed;
+  /* position: fixed;
     top: 0;
     left: 0;  */
-
 }
 
 .grow {
-	transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }

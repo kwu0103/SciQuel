@@ -1,59 +1,59 @@
 .background {
-    height: 100%;
-    width: 25em;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #dae9e2;
-    overflow-x: hidden;
-    padding-top: 15px;
+  height: 100%;
+  width: 25em;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #dae9e2;
+  overflow-x: hidden;
+  padding-top: 15px;
 }
 
 .contributorName {
-    font-size: 2.5em;
-    font-family: 'Alegreya Sans SC';
-    font-weight: bolder;
+  font-size: 2.5em;
+  font-family: "Alegreya Sans SC";
+  font-weight: bolder;
 
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
-    
-    max-width: 150px;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+
+  max-width: 150px;
 }
 
 .center {
-    padding: 4em;
-    padding-top: 2em;
-    justify-content: center;
+  padding: 4em;
+  padding-top: 2em;
+  justify-content: center;
 }
 
 .image {
-    border-radius: 50%;
-    margin: 1em auto;
-    height: 15em;
-    width: 15em;
+  border-radius: 50%;
+  margin: 1em auto;
+  height: 15em;
+  width: 15em;
 }
 
 .tags {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .socials > * {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-    .image {
-        height: 8em;
-        width: 8em;
-    }
-    .contributorName {
-        font-size: 1.25em;
-    }
-    .background {   
-        width: 15em;
-    }
+  .image {
+    height: 8em;
+    width: 8em;
+  }
+  .contributorName {
+    font-size: 1.25em;
+  }
+  .background {
+    width: 15em;
+  }
 }

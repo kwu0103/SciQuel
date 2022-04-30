@@ -1,38 +1,38 @@
 .main {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
 }
 
 .left {
-    height: 100%;
-    position: absolute;
+  height: 100%;
+  position: absolute;
 }
 
 .right {
-    margin-left: 20px;
-    padding-top: 30px;
+  margin-left: 20px;
+  padding-top: 30px;
 }
 
 .cards {
-    min-width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
+  min-width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .cards > a {
-    color: black;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.cards > a:hover{
-    transform: scale(1.1);
+.cards > a:hover {
+  transform: scale(1.1);
 }
 
-.pageNumbers{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.pageNumbers {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }

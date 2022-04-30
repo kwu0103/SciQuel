@@ -1,5 +1,5 @@
 .wrapper {
-	width: 100%;
+  width: 100%;
 }
 
 .MainCard {
@@ -24,30 +24,29 @@
 	max-width: 507px;
 	height: 230px;
 
-	position: relative;
+  position: relative;
 
-	padding-left: 32px;
-	padding-right: 64px;
-	padding-top: 32px;
-	padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-	border-radius: 5px;
-	background-image: linear-gradient(#1a6f8c, #63a59d);
-	color: white;
+  border-radius: 5px;
+  background-image: linear-gradient(#1a6f8c, #63a59d);
+  color: white;
 
-	cursor: pointer;
+  cursor: pointer;
 }
-
 .HeadlineText {
-	margin-top: 2px;
-	font-family: 'Alegreya Sans SC';
-	font-weight: bold;
-	font-size: 30px;
+  margin-top: 2px;
+  font-family: "Alegreya Sans SC";
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .SubheadlineText {
-	font-family: 'Quicksand';
-	font-size: 20px;
+  font-family: "Quicksand";
+  font-size: 20px;
 }
 
 .ContributorText {	
@@ -58,7 +57,7 @@
 }
 
 .PseudoGrowHover {
-	transform: scale(1.05) translate(-5px, 10px);
+  transform: scale(1.05) translate(-5px, 10px);
 }
 
 .VerticalCenter {

@@ -1,10 +1,9 @@
 import Link from "next/Link";
 import { Card } from "react-bootstrap";
-
-import cardStyles from "./ArticleCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
+import cardStyles from "../ArticleCard/ArticleCard.module.css";
 
-function ArticleCard({
+function StaffPick({
   headline,
   subheadline,
   contributor,
@@ -16,9 +15,19 @@ function ArticleCard({
 }) {
   return (
     <Link href={href} passHref>
-      {/* <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}> */}
-      <div className={cardStyles.cardBackground + " " + utilStyles.grow}>
-        <Card style={{ marginRight: "10px", marginLeft: "10px" }}>
+      <div
+        style={{ width: "100%", marginBottom: "2rem" }}
+        className={utilStyles.grow}
+      >
+        <Card
+          className="d-flex flex-row flex-row-reverse p-2"
+          style={{ width: "100%" }}
+        >
+          <Card.Img
+            className=""
+            style={{ objectFit: "cover", maxHeight: "", maxWidth: "40%" }}
+            src={imgSrc}
+          />
           <Card.Body>
             {tag}
             <small className={cardStyles.kind + " " + cardStyles.bodyFont}>
@@ -51,16 +60,10 @@ function ArticleCard({
               </div>
             </div>
           </Card.Body>
-
-          <Card.Img
-            className={cardStyles.cardPic}
-            variant="bottom"
-            src={imgSrc}
-          />
         </Card>
       </div>
     </Link>
   );
 }
 
-export default ArticleCard;
+export default StaffPick;
