@@ -21,13 +21,15 @@ function MainCard({
   subheadline,
   contributor,
   date,
+  size,
   imgSrc,
   href,
 }) {
+
   const ContributorText = useRef();
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
-
+  let s = (100 - size) / 4;
 
   useLayoutEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
@@ -39,8 +41,8 @@ function MainCard({
         ContributorText.current.classList.remove(styles.PseudoGrowHover);
       };
       const matches = document.querySelectorAll("fit");
+
       document.querySelectorAll("fit").forEach((el) => {
-        // We just need the length of the string as a CSS variable...
         el.style.setProperty("--length", el.innerText.length);
       });
 
@@ -59,20 +61,19 @@ function MainCard({
       <div className={styles.MainCard}>
         <Link href={href} passHref={true}>
           <div className={styles.HeadlineBoxAndContributorText}>
-
             <div className={styles.VerticalCenter}>
               <div
                 className={styles.HeadlineBox + " " + utilStyles.grow}
                 ref={HeadlineBox}
               >
                 {tag}
-                both displayed without any re-formatting
+                {/* both displayed without any re-formatting */}
                 <div className={styles.HeadlineText}>{headline}</div>
                 <div className={styles.SubheadlineText}>{subheadline}</div>
               </div>
             </div>
             <div className={styles.ContributorText} ref={ContributorText}>
-              <div className={styles.fit}>
+              <div className={styles.fit} style={{ fontSize: s }}>
                 {contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}
               </div>
             </div>

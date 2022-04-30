@@ -8,7 +8,8 @@ export default function index() {
     <MainCard
       headline="Lights. Camera. Action!"
       subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
-      contributor="By EdwardEdward Chen"
+      contributor="By Edward Chen"
+      size={20}
       tag={BiologyTag}
       date="05/27/21"
       imgSrc="/bobtail.png"
