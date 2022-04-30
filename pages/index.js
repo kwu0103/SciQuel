@@ -3,13 +3,6 @@ import MainCard from "../components/MainCard/MainCard";
 import ArticleCard from "../components/ArticleCard/ArticleCard";
 import BiologyTag from "../components/Tag/BiologyTag";
 
-import styles from "../components/HomepageLayout/HomepageLayout.module.css";
-
-import Image from "next/Image";
-
-import profilePic from "../public/bobtail.png";
-import { left } from "@popperjs/core";
-
 export default function index() {
   const mainCard = (
     <MainCard
@@ -18,7 +11,7 @@ export default function index() {
       contributor="By Edward Chen"
       tag={BiologyTag}
       date="05/27/21"
-      imgSrc={profilePic}
+      imgSrc="/bobtail.png"
       href="/posts/post"
     />
   );
@@ -43,36 +36,21 @@ export default function index() {
         Read what&apos;s new
       </div>
       <div>
-        <div className="d-flex justify-content-center">
-          <div
-            style={{
-              width: "1700px",
-              minHeight: "390px",
-              paddingLeft: "0rem",
-              paddingRight: "2rem",
-              paddingBottom: "2rem",
-            }}
-          >
-            {mainCard}
-          </div>
-        </div>
+        {mainCard}
 
-        <div className="d-flex justify-content-center">
-          <div
-            className="row row-cols-md-1  row-cols-md-2 row-cols-lg-3"
-            style={{
-              width: "1790px",
-              paddingLeft: "1rem",
-              paddingRight: "1rem",
-            }}
-          >
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-            <div style={{ padding: "0px" }}>{articleCard}</div>
-          </div>
+        <div
+          className="d-flex justify-content-center row row-cols-md-1  row-cols-md-2 row-cols-lg-3"
+          style={{
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+          }}
+        >
+          <div style={{ padding: "0px" }}>{articleCard}</div>
+          <div style={{ padding: "0px" }}>{articleCard}</div>
+          <div style={{ padding: "0px" }}>{articleCard}</div>
+          <div style={{ padding: "0px" }}>{articleCard}</div>
+          <div style={{ padding: "0px" }}>{articleCard}</div>
+          <div style={{ padding: "0px" }}>{articleCard}</div>
         </div>
       </div>
     </HomepageLayout>
