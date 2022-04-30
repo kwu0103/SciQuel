@@ -1,5 +1,5 @@
-@tailwind base; 
-@tailwind components; 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 html,
@@ -21,17 +21,17 @@ a {
 }
 
 p {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   font-size: 1.25rem;
 }
 
 h4 {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-weight: 900;
-  color: #4A8257;
+  color: #4a8257;
 }
 
 h5 {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-size: 1.2rem;
 }

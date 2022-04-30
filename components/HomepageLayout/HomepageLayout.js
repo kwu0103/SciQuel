@@ -1,9 +1,9 @@
-import Head from 'next/Head';
+import Head from "next/Head";
 
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-import styles from './HomepageLayout.module.css';
+import styles from "./HomepageLayout.module.css";
 
 export default function HomepageLayout({ children }) {
   return (
@@ -19,4 +19,4 @@ export default function HomepageLayout({ children }) {
       <Footer />
     </>
   );
-};
+}

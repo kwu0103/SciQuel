@@ -1,7 +1,7 @@
 import Head from "next/head";
 import profileStyles from "./Profile.module.css";
 import Tag from "../../Tags/Tags";
-import Image from "next/image";
+import Image from "next/Image";
 
 function Profile({ contributorName, spans, description, tags, image, icons }) {
   const { color, size } = tags;

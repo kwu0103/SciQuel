@@ -1,117 +1,117 @@
 .nav {
-    overflow: hidden;
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: row;
-    height: 50px;
-    width: 100%;
-    background-color: #69A297;
-    padding: 0 1rem;
-    margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  background-color: #69a297;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-.nav > h4{
-    cursor: pointer;
-    margin:inherit;
-    text-decoration: none;
-    background: #69A297;
-    font-size: 14px;
-    padding: 16px 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    color: white;
-    transition: all 0.125s ease;
+.nav > h4 {
+  cursor: pointer;
+  margin: inherit;
+  text-decoration: none;
+  background: #69a297;
+  font-size: 14px;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: white;
+  transition: all 0.125s ease;
 }
 
-.nav > h4:hover{
-    background-color: #51726b;
+.nav > h4:hover {
+  background-color: #51726b;
 }
 
 .nav > a {
-    margin:inherit;
-    text-decoration: none;
-    background: #69A297;
-    font-size: 14px;
-    padding: 12px 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    color: white;
-    transition: all 0.125s ease;
+  margin: inherit;
+  text-decoration: none;
+  background: #69a297;
+  font-size: 14px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: white;
+  transition: all 0.125s ease;
 }
 
-.list{
-    padding: 12px 40px;
+.list {
+  padding: 12px 40px;
 }
 
 .list > a {
-    margin:inherit;
-    text-decoration: none;
-    background: #69A297;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    color: white;
-    padding: 12px 50px;
-    transition: all 0.125s ease;
+  margin: inherit;
+  text-decoration: none;
+  background: #69a297;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: white;
+  padding: 12px 50px;
+  transition: all 0.125s ease;
 }
 
-.listClose{
-    padding: 12px 40px;
+.listClose {
+  padding: 12px 40px;
 }
 
 .listClose > a {
-    margin:inherit;
-    text-decoration: none;
-    background: #69A297;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    color: white;
-    padding: 12px 50px;
-    transition: all 0.125s ease;
+  margin: inherit;
+  text-decoration: none;
+  background: #69a297;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: white;
+  padding: 12px 50px;
+  transition: all 0.125s ease;
 }
 
 .nav > form {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .nav > a:hover {
-    background-color: #51726b;
-    /* background-color: #337CA0; */
+  background-color: #51726b;
+  /* background-color: #337CA0; */
 }
 
 .nav > .list > a:hover {
-    background-color: #51726b;
-    /* background-color: #337CA0; */
+  background-color: #51726b;
+  /* background-color: #337CA0; */
 }
-.search{
-    display: flex;
-    justify-content: center;
+.search {
+  display: flex;
+  justify-content: center;
 }
 
-.search{
-    display: flex;
-    justify-content: center;
+.search {
+  display: flex;
+  justify-content: center;
 }
 
 .input {
-    text-decoration: none;
-    border: none;
-    background: #69A297;
-    font-size: 14px;
-    margin: 8px 16px;
+  text-decoration: none;
+  border: none;
+  background: #69a297;
+  font-size: 14px;
+  margin: 8px 16px;
 
-    padding-left: 25px;
-    background-image: url("../../public/search.svg");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
+  padding-left: 25px;
+  background-image: url("../../public/search.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
-.input::placeholder { 
-    color: white;
+.input::placeholder {
+  color: white;
 }
