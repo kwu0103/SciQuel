@@ -3,6 +3,8 @@ import MainCard from "../components/MainCard/MainCard";
 import ArticleCard from "../components/ArticleCard/ArticleCard";
 import BiologyTag from "../components/Tag/BiologyTag";
 
+import StaffPick from "../components/StaffPick/StaffPick";
+
 export default function index() {
   const mainCard = (
     <MainCard
@@ -30,6 +32,19 @@ export default function index() {
     />
   );
 
+  const staffPickCard = (
+    <StaffPick
+      headline="Lights. Camera. Action!"
+      subheadline="Countries that once led the world in coronavirus monitoring are now scaling back, leaving the world less prepared to spot variants, experts said."
+      contributor="Edward Chen"
+      kind="ARTICLE"
+      tag={BiologyTag}
+      date="05/27/21"
+      imgSrc="/bobtail.png"
+      layout="responsive"
+      href="/posts/post"
+    />
+  );
   return (
     <HomepageLayout>
       <div style={{ fontSize: "40px", marginLeft: "2rem", padding: "2rem" }}>
@@ -52,6 +67,13 @@ export default function index() {
           <div style={{ padding: "0px" }}>{articleCard}</div>
           <div style={{ padding: "0px" }}>{articleCard}</div>
         </div>
+      </div>
+
+      <div className="d-flex flex-column justify-content-center p-5">
+        <div style={{ fontSize: "40px" }}>Staff Picks</div>
+        {staffPickCard}
+        {staffPickCard}
+        {staffPickCard}
       </div>
     </HomepageLayout>
   );
