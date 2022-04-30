@@ -50,16 +50,10 @@
 	font-size: 20px;
 }
 
-.fit{
-	color: #1a6f8c;
-	/* --width: 5vw;
-	--scale: 0.9;
-	font-size: calc(var(--width) / (var(--length, 1) * 3) * var(--scale, 0.1)); */
-}
+
 
 .ContributorText {	
 	max-width: 17rem;
-	border: solid;
 	color: grey;
 	transition: all 0.2s ease-in-out;
 	position: absolute;

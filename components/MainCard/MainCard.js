@@ -21,7 +21,6 @@ function MainCard({
   subheadline,
   contributor,
   date,
-  size,
   imgSrc,
   href,
 }) {
@@ -29,7 +28,7 @@ function MainCard({
   const ContributorText = useRef();
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
-  let s = (100 - size) / 4;
+
 
   useLayoutEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
@@ -73,9 +72,7 @@ function MainCard({
               </div>
             </div>
             <div className={styles.ContributorText} ref={ContributorText}>
-              <div className={styles.fit} style={{ fontSize: s }}>
-                {contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}
-              </div>
+              {contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}
             </div>
           </div>
         </Link>
