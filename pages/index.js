@@ -35,9 +35,16 @@ export default function index() {
       <div style={{ fontSize: "40px", marginLeft: "2rem", padding: "2rem" }}>
         Read what&apos;s new
       </div>
-      <div class="d-flex row justify-content-center">
+      <div class="d-flex row justify-content-center"
 
-        <div>
+      >
+
+        <div
+          style={{
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+          }}
+        >
           {mainCard}
         </div>
 
