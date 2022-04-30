@@ -50,8 +50,6 @@
 	font-size: 20px;
 }
 
-
-
 .ContributorText {	
 	max-width: 17rem;
 	color: grey;
@@ -92,6 +90,7 @@
 		position: relative;
 		border: 1px solid rgba(0, 0, 0, 0.125);
 		border-radius: 0;
+		margin-left: 5px;
 	}
 	.ContributorText {
 		position: static;

@@ -9,7 +9,6 @@ export default function index() {
       headline="Lights. Camera. Action!"
       subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
       contributor="By Edward Chen"
-      size={20}
       tag={BiologyTag}
       date="05/27/21"
       imgSrc="/bobtail.png"
@@ -36,12 +35,16 @@ export default function index() {
       <div style={{ fontSize: "40px", marginLeft: "2rem", padding: "2rem" }}>
         Read what&apos;s new
       </div>
-      <div>
-        {mainCard}
+      <div class="d-flex row justify-content-center">
+
+        <div>
+          {mainCard}
+        </div>
 
         <div
           className="d-flex justify-content-center row row-cols-md-1  row-cols-md-2 row-cols-lg-3"
           style={{
+            width: '1790px',
             paddingLeft: "1rem",
             paddingRight: "1rem",
           }}
