@@ -38,6 +38,11 @@ function MainCard({
       HeadlineBox.current.onmouseout = () => {
         ContributorText.current.classList.remove(styles.PseudoGrowHover);
       };
+      const matches = document.querySelectorAll("fit");
+      document.querySelectorAll("fit").forEach((el) => {
+        // We just need the length of the string as a CSS variable...
+        el.style.setProperty("--length", el.innerText.length);
+      });
 
       // move contributor text to beneath headline box
       if (Wrapper.current) {
@@ -54,22 +59,22 @@ function MainCard({
       <div className={styles.MainCard}>
         <Link href={href} passHref={true}>
           <div className={styles.HeadlineBoxAndContributorText}>
+
             <div className={styles.VerticalCenter}>
               <div
                 className={styles.HeadlineBox + " " + utilStyles.grow}
                 ref={HeadlineBox}
               >
                 {tag}
-                {/* both displayed without any re-formatting */}
+                both displayed without any re-formatting
                 <div className={styles.HeadlineText}>{headline}</div>
                 <div className={styles.SubheadlineText}>{subheadline}</div>
               </div>
             </div>
             <div className={styles.ContributorText} ref={ContributorText}>
-              <p>
-                {/* both displayed without any re-formatting */}
+              <div className={styles.fit}>
                 {contributor}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{date}
-              </p>
+              </div>
             </div>
           </div>
         </Link>
