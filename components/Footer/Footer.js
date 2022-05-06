@@ -1,20 +1,38 @@
 import Link from "next/Link";
-import styles from "./footer.module.css";
+import styles from "./Footer.module.css";
 import Image from "next/Image";
 
 export default function Footer() {
+  const onSubscribe = (e) => {
+    e.preventDefault();
+    console.log("Subscribed");
+    document.getElementById("email").value = "";
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.flex}>
-        <div className={styles.emailForm}>
+        <div>
           <h6 className={styles.text}>
             Get a weekly dose of accessible science to your inbox
           </h6>
-          <input className={styles.input} placeholder="sciquel@gmail.com" />
-          <input type="submit" className={styles.button} value="Subscribe" />
+          <form onSubmit={onSubscribe}>
+            <input
+              id="email"
+              type="email"
+              className={styles.input}
+              placeholder="sciquel@gmail.com"
+              pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="Please provide a valid email"
+              required
+            />
+            <button type="submit" className={styles.button}>
+              Subscribe
+            </button>
+          </form>
         </div>
-        <div>
-          <h6 className={styles.text}>SciQuel</h6>
+        <div className={styles.right}>
+          <h6 className={styles.logo}>SciQuel</h6>
           <div className={styles.social}>
             <Link href="/">
               <a>

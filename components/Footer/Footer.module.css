@@ -16,13 +16,6 @@
   padding-top: 10px;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -51,8 +44,6 @@
   border-color: white;
   background-color: #69a297;
   border-top-left-radius: 10px;
-  font-size: 30px;
-  font-weight: 500;
   border-bottom-left-radius: 10px;
   font-size: 30px;
   font-weight: 500;
