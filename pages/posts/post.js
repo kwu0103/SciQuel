@@ -11,7 +11,7 @@ import DefBox from "../../components/DefinitionBox/defBox";
 import styles from "./post.module.css";
 import defStyles from "../../components/DefinitionBox/defBox.module.css";
 
-import { useEffect, useRef, useLayoutEffect } from "react";
+import { useEffect, useRef } from "react";
 
 /* global document */
 function Post() {

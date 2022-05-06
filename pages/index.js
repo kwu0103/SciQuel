@@ -2,7 +2,6 @@ import HomepageLayout from "../components/HomepageLayout/HomepageLayout";
 import MainCard from "../components/MainCard/MainCard";
 import ArticleCard from "../components/ArticleCard/ArticleCard";
 import BiologyTag from "../components/Tag/BiologyTag";
-
 import StaffPick from "../components/StaffPick/StaffPick";
 
 export default function index() {

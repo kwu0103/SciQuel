@@ -1,6 +1,6 @@
 import Image from "next/Image";
 import Link from "next/Link";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 import styles from "./MainCard.module.css";
 import utilStyles from "../../styles/utils.module.css"; // change hover effect here
@@ -28,7 +28,7 @@ function MainCard({
   const HeadlineBox = useRef();
   const Wrapper = useRef(); // screen width and bounding height
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // apply scaling to contributor text when headline box is also scaled
     if (HeadlineBox.current && ContributorText.current) {
       HeadlineBox.current.onmouseover = () => {
