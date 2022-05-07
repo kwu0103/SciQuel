@@ -1,5 +1,6 @@
 import Link from "next/Link";
 import { Card } from "react-bootstrap";
+import { useEffect, useRef } from "react";
 
 import cardStyles from "./ArticleCard.module.css";
 import utilStyles from "../../styles/utils.module.css";
@@ -14,6 +15,29 @@ function ArticleCard({
   date,
   href,
 }) {
+  // truncate subheadline to three lines
+  const subheadlineRef = useRef();
+  useEffect(() => {
+    const truncate = () => {
+      const cur = subheadlineRef.current;
+      if (cur) {
+        cur.innerText = subheadline; // reset to max length string for resizing up
+        while (
+          cur.scrollHeight - 2 >= // 2px leeway
+          cur.clientHeight
+        ) {
+          const innerText = cur.innerText;
+          const words = innerText.split(" ");
+          const lastWordLength = words[words.length - 1].length;
+          cur.innerText = // mutating ref's innerText
+            innerText.substring(0, innerText.length - lastWordLength - 1) + "…";
+        }
+      }
+    };
+    truncate();
+    window.addEventListener("resize", truncate);
+  }, [subheadline]);
+
   return (
     <Link href={href} passHref>
       {/* <div className={"text-center", cardStyles.cardBackground + ' ' + utilStyles.grow}> */}
@@ -30,6 +54,7 @@ function ArticleCard({
               </Card.Title>
               <Card.Text
                 className={cardStyles.body + " " + cardStyles.bodyFont}
+                ref={subheadlineRef}
               >
                 {subheadline}
               </Card.Text>

@@ -53,7 +53,7 @@ async function fetchPosts() {
   const articleCard = (
     <ArticleCard
       headline="Lights. Camera. Action!"
-      subheadline="How the Hawaiian bobtail squid brings a creative vision to its..."
+      subheadline="How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens"
       contributor="Edward Chen"
       kind="ARTICLE"
       tag={BiologyTag}
