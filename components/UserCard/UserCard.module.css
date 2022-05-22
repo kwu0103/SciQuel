@@ -1,0 +1,21 @@
+.cardPic {
+    margin: 5px;
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+}
+
+.cardBackground {
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    display:inline-block;
+}
+
+.desc{
+    color:gray;
+    font-style: italic;
+    font-family: "ITC Galliard Pro Roman";
+}
