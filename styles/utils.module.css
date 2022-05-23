@@ -32,17 +32,17 @@
 	margin-left: 100px;
     max-width: 55%;
     transform: translateY(-50px);
-	margin-top: 14%;
+	margin-top: 20%;
 
 	position: absolute;
-	bottom: 128px;
+	/* bottom: 128px; */
 }
 
 .centersubtitle {
     margin-left: 100px;
     max-width: 40%;
 	position: absolute;
-	margin-top: 20%;
+	margin-top: 22%;
 } 
 
 .centerarticle{
@@ -63,9 +63,9 @@
     /* width: auto;
     height: 100vh; */
     width: auto;
-    height: calc(100vh - 50px); /* entire screen minus navbar */
-
-    /* position: fixed;
+    /* height: calc(100vh - 50px); entire screen minus navbar */
+	height: 100vh
+	/* position: fixed;
     top: 0;
     left: 0;  */
 

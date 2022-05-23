@@ -13,12 +13,21 @@ import defStyles from "../../components/DefinitionBox/defBox.module.css";
 
 import { useEffect, useRef, useLayoutEffect } from "react";
 
+import React from 'react';
+import { IntersectionObserver} from 'intersection-observer-react'
+// import Observer from '@researchgate/react-intersection-observer';
+// require('intersection-observer');
+
+
 /* global document */
 function Post() {
   const defBox = useRef();
   const defText = useRef();
   const cancelBtn = useRef();
   const page = useRef();
+  const header = useRef();
+  const clickArrow = useRef()
+
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -39,8 +48,28 @@ function Post() {
       cancelBtn.current.classList.add(defStyles.hide);
     }
   };
+  var observer = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === false)
+      console.log('Element is not visible in screen');
+  }, { root: null, threshold: [0] });
+
+  // observer.observe()
 
   useEffect(() => {
+
+    // clickArrow.current.classList.add(defStyles.rotate);
+
+    clickArrow.current.addEventListener("click", () => {
+      console.log("arrow clicked")
+      if (clickArrow.current.classList.contains(styles.rotate)){
+        clickArrow.current.classList.remove(styles.rotate);
+      }
+      else{
+        clickArrow.current.classList.add(styles.rotate);
+
+      }
+    });
+
     // hide defbox initially
     defBox.current.classList.add(defStyles.hide);
     cancelBtn.current.classList.add(defStyles.hide);
@@ -90,7 +119,7 @@ function Post() {
 
   return (
     <>
-      <Header />
+      <Header ref={header}/>
       <div ref={defBox}>
         <DefBox
           term="Lorem ipsum"
@@ -119,7 +148,7 @@ function Post() {
                 onScroll={scroll()}
                 className={styles.defText}
               >
-                
+
 
               Vibrio fischeri
             </button>
@@ -343,6 +372,13 @@ function Post() {
         <Acknowledgement>
           Cover Image: “Hawaiian Bobtail Squid” is licensed under CC BY-NC 4.0.
         </Acknowledgement>
+        <button  ref={clickArrow} className={styles.arrow}>
+          <svg width="24" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="37.0925" height="5.90109" rx="2.95055" transform="matrix(0.715267 -0.698851 -0.69877 -0.715347 4.1235 30.3234)" fill="#69A297"/>
+          <path d="M50.9063 28.9379C52.0718 27.7991 52.0935 25.9309 50.9548 24.7653L29.1584 2.45328C28.0197 1.28763 26.1517 1.26591 24.9862 2.40475C23.8207 3.54359 23.799 5.41175 24.9377 6.57739L46.7341 28.8894C47.8728 30.0551 49.7408 30.0768 50.9063 28.9379Z" fill="#69A297"/>
+          </svg>
+        </button>
+
       </Article>
       <div style={{ marginLeft: "44%", marginTop: "-2%", marginBottom: "5%",transform: "translateX(-50%)" }}>
       {/* <hr className={styles.hr} /> */}
