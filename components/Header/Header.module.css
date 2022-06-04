@@ -1,22 +1,22 @@
 .nav {
-  min-width: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
   height: 50px;
   width: 100%;
   background-color: #69a297;
+  flex-shrink: 2;
   padding: 0 1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-.nav > h4 {
+.nav>h4 {
   cursor: pointer;
   margin: inherit;
   text-decoration: none;
   background: #69a297;
-  font-size: 14px;
-  padding: 16px 40px;
+  font-size: 18px;
+  padding: 1rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.025em;
@@ -24,16 +24,15 @@
   transition: all 0.125s ease;
 }
 
-.nav > h4:hover {
+.nav>h4:hover {
   background-color: #51726b;
 }
 
-.nav > a {
+.nav>a {
   margin: inherit;
   text-decoration: none;
   background: #69a297;
-  font-size: 14px;
-  padding: 12px 40px;
+  /* font-size: 14px; */
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.025em;
@@ -42,52 +41,60 @@
 }
 
 .list {
-  padding: 12px 40px;
+  padding: 12px 1.2rem;
 }
 
-.list > a {
+.list>a {
   margin: inherit;
   text-decoration: none;
   background: #69a297;
-  font-size: 14px;
+  /* font-size: 14px; */
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.025em;
   color: white;
-  padding: 12px 50px;
+  /* padding: 12px 50px; */
   transition: all 0.125s ease;
 }
 
 .listClose {
-  padding: 12px 40px;
+  padding: 12px 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
 }
 
-.listClose > a {
+.loginLink {
+  padding-top: 12px;
+}
+
+.listClose>a {
   margin: inherit;
   text-decoration: none;
   background: #69a297;
-  font-size: 14px;
+  /* font-size: 14px; */
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.025em;
   color: white;
-  padding: 12px 50px;
+  /* padding: 12px 50px; */
   transition: all 0.125s ease;
 }
 
-.nav > form {
-  margin-left: 50px;
+.nav>form {
+  margin-left: 1.3rem;
 }
 
-.nav > a:hover {
+.nav>a:hover {
   background-color: #51726b;
   /* background-color: #337CA0; */
 }
 
-.nav > .list > a:hover {
+.nav>.list>a:hover {
   background-color: #51726b;
   /* background-color: #337CA0; */
 }
+
 .search {
   display: flex;
   justify-content: center;
@@ -97,7 +104,7 @@
   text-decoration: none;
   border: none;
   background: #69a297;
-  font-size: 14px;
+  /* font-size: 14px; */
   margin: 8px 16px;
 
   padding-left: 25px;
@@ -116,7 +123,7 @@
   cursor: pointer;
 }
 
-.menu > div {
+.menu>div {
   width: 25px;
   height: 3px;
   background-color: white;
@@ -135,12 +142,12 @@
   margin: 0 auto;
 }
 
-.navOpen > h4 {
+.navOpen>h4 {
   cursor: pointer;
   margin: inherit;
   text-decoration: none;
   background: #69a297;
-  font-size: 14px;
+  /* font-size: 14px; */
   padding: 16px 40px;
   text-transform: uppercase;
   font-weight: 600;
@@ -149,11 +156,11 @@
   transition: all 0.125s ease;
 }
 
-.navOpen > h4:hover {
+.navOpen>h4:hover {
   background-color: #51726b;
 }
 
-.navOpen > a {
+.navOpen>a {
   margin: inherit;
   text-decoration: none;
   background: #69a297;
@@ -166,15 +173,15 @@
   transition: all 0.125s ease;
 }
 
-.navOpen > form {
+.navOpen>form {
   margin-left: 50px;
 }
 
-.navOpen > a:hover {
+.navOpen>a:hover {
   background-color: #51726b;
 }
 
-.navOpen > .list > a:hover {
+.navOpen>.list>a:hover {
   background-color: #51726b;
 }
 
@@ -186,42 +193,63 @@
 
 /* GitHub header width 700 */
 @media only screen and (max-width: 750px) {
+  .loginLink {
+    display: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   .search {
     visibility: hidden;
   }
+
   .nav {
     display: flex-start;
   }
+
   .navOpen {
-    display: flex-start;
     padding-bottom: 230px;
   }
-  .nav > a {
+
+  .nav>a {
     visibility: hidden;
   }
+
   /*Logo*/
-  .nav > h4 {
+  .nav>h4 {
     margin-left: 220px;
   }
-  .navOpen > h4 {
+
+  .navOpen>h4 {
     margin-left: 220px;
   }
+
   .menu {
     display: block;
     padding: 10px;
     margin-left: -450px;
   }
+
   .list {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     right: 0px;
-    top: 4vh;
-    width: 100%;
+    top: 6vh;
+    width: 100vw;
     background-color: #69a297;
   }
-  .list > a {
+
+  .list:after {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    height: 40px;
+    width: 1px;
+  }
+
+  .list>a {
     margin: inherit;
     text-decoration: none;
     background: #69a297;
@@ -233,9 +261,11 @@
     padding: 12px 50px;
     transition: all 0.125s ease;
   }
+
   .listClose {
     display: none;
   }
+
   .blank {
     background-color: white;
     padding-bottom: 190px;

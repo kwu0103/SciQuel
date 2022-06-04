@@ -42,6 +42,7 @@
   text-decoration: none;
   border-style: solid;
   border-color: white;
+  border-width:2px;
   background-color: #69a297;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -107,7 +108,8 @@
   }
   .right {
     padding-top: 30px;
-    margin-left: 300px;
+    display:flex;
+    align-items: flex-end;
   }
   .button {
     height: 41px;
