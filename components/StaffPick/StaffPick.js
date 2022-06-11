@@ -39,10 +39,11 @@ function StaffPick({
               </Card.Title>
               <Card.Text
                 className={cardStyles.body + " " + cardStyles.bodyFont}
+                style={{marginTop:"1rem"}}
               >
                 {subheadline}
               </Card.Text>
-              <div style={{ marginTop: "2.25em" }}>
+              <div style={{ marginTop: "3.5rem" }}>
                 <Card.Text>
                   <small
                     className={cardStyles.small + " " + cardStyles.bodyFont}
