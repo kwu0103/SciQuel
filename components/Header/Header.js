@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/Link";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = showMenu ? styles.list : styles.listClose;
   const toggleMenuNav = showMenu ? styles.navOpen : styles.nav;
+
+  function windowWidth() {
+
+    useEffect(() => {
+      const handleResize = () => {
+        if(window.innerWidth >=750){
+          setShowMenu(false)
+        }
+      }
+      window.addEventListener('resize', handleResize)
+    }, [])
+  }
+
+  windowWidth()
 
   return (
     <nav className={toggleMenuNav}>
@@ -36,7 +50,7 @@ export default function Header() {
       </form>
 
       <Link href="/">
-        <a>Sign in</a>
+        <a className={styles.loginLink}>Login</a>
       </Link>
 
       <div className={styles.menu} onClick={() => setShowMenu(!showMenu)}>

@@ -6,6 +6,10 @@
   margin-top: 7%;
 }
 
+.highlight {
+  background-color: yellow;
+}
+
 .defText {
   border: none;
   font-size: 16px;

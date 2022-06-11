@@ -87,7 +87,20 @@ function Post() {
     };
   });
 
-  const scroll = () => {};
+  const scroll = () => { };
+
+  useEffect(() => {
+    document.addEventListener('selectionchange', () => {
+      try {
+        var selection = document.getSelection()
+        var parentNode = selection.anchorNode.parentElement
+        var innerHTML = parentNode.innerHTML
+        var newInnerHTML = innerHTML.slice(0, selection.anchorOffset) + `<span className=${styles.highlight}>` +
+          innerHTML.slice(selection.anchorOffset, selection.focusOffset) + `</span>` + innerHTML.slice(selection.focusOffset)
+        console.log(newInnerHTML)
+      } catch { }
+    });
+  })
 
   return (
     <>
