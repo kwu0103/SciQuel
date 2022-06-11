@@ -3,6 +3,7 @@ import Figure from "../../components/Figure/Figure";
 import Acknowledgement from "../../components/Acknowledgement/Acknowledgement";
 import BiologyTag from "../../components/Tag/BiologyTag";
 import ContributorBox from "../../components/ContributorBox/contributorBox";
+import Comment from "../../components/Comment/Comment";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -372,6 +373,7 @@ function Post() {
             image="/SciQuel_1.png"
           />
         </div>
+        <Comment />
         <Footer />
       </div>
     </>

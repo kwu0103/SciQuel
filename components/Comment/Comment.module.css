@@ -1,0 +1,43 @@
+.input{
+    width: 90%;
+    text-decoration: none;
+    border: none;
+    background: #ececec;
+    font-size: 20px;
+    margin: 8px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button{
+    width: 10%;
+    text-decoration: none;
+    color:#717171;
+    font-size: 20px;
+    font: bold;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 8px 0px;
+    border: none;
+    background: #ececec;
+}
+
+
+.form{
+    margin-left: 25%;
+    margin-right: 15%;
+    width: 60%;
+}
+
+.div{
+    margin-left: 25%;
+    margin-right: 15%;
+    width: 60%;
+    text-align: left;
+    font-size: x-large;
+    font: bold;
+}
